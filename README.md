@@ -1,4 +1,4 @@
-# Dsa (JAVA)
+# DSA (JAVA)
 
 #### Data structures and Algorithums
 1. Data structure - Way to store and organise data efficiently in system.
