@@ -55,5 +55,13 @@ Unique hand will ignore this order, so unique hands = P(3,9)/9! => 36!/(36-9)!*(
 
 ---
 
-Probability & combination
+Probability & combination(Combinatorics)
+
+- Toss 4 coins, what is propbability of getting exact 2 heads
+
+(H/T), (H/T), (H/T), (H/T) => 2*2*2*2 = 16 scenario(total)
+
+Exact 2 heads => HHTT, HTHT, HTTH || 
+
+
 
