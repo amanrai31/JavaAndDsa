@@ -18,7 +18,7 @@
 
 ---
 
-### Alog
+### Algorithm
 
 **Easy :** BFS, DFS, (linear search, binary search, jump search), bubble sort, insertion sort, redix sort, counting sort, bucket sort, traversal(preorder, inorder, postorder), 2-Pointer, slow-fast pointer, greedy algo, divide & conquer.
 
