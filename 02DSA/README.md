@@ -17,8 +17,8 @@
 
 ### Alog
 
-**Easy :** BFS, DFS, binary search, bubble sort, insertion sort, redix sort, counting sort, bucket sort, traversal(preorder, inorder, postorder), 2-Pointer, slow-fast pointer, greedy algo.
+**Easy :** BFS, DFS, (linear search, binary search, jump search), bubble sort, insertion sort, redix sort, counting sort, bucket sort, traversal(preorder, inorder, postorder), 2-Pointer, slow-fast pointer, greedy algo, divide & conquer.
 
-**Intermediate :** Dijkstra's algo, Floyd-warshell algorithm, Bellmen-ford algo, Kruskal's algo, prim's algo, Floyd's cycle detection algo, Topological sorting, quick sort, merge sort, heap sort, sliding window tech, backtracking, kadane's algo(max subarray sum), longest incresing subsequence(LIS)
+**Intermediate :** Dijkstra's algo, Floyd-warshell algorithm, Bellmen-ford algo, Kruskal's algo, prim's algo, Hamming dist, suffix tree, Rabin-Karp algo, Floyd's cycle detection algo, Topological sorting, quick sort, merge sort, heap sort, sliding window tech, backtracking, kadane's algo(max subarray sum), spanning tree, longest incresing subsequence(LIS)
 
 **Hard :** DP, Bit manipulation techniques, string manipulation (logest common subsequence), 0/1 knapsack.
