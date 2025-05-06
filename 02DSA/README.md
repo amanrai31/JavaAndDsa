@@ -4,8 +4,7 @@
 
 - If input array is sorted then => Binary search, 2-pointers.
 - If asked for all permutation/subset then => Backtracking
-- If given a tree => BFS, DFS
-- If given a graph => DFS, BFS
+- If given a tree OR graph => BFS, DFS
 - If given a linked list => 2-pointers
 - If recursion is banned => Stack
 - If must solve in-place then => Swap corresponding values, store 1 or more diff values in same pointer
@@ -21,4 +20,4 @@
 
 **Intermediate :** Dijkstra's algo, Floyd-warshell algorithm, Bellmen-ford algo, Kruskal's algo, prim's algo, Hamming dist, suffix tree, Rabin-Karp algo, Floyd's cycle detection algo, Topological sorting, quick sort, merge sort, heap sort, sliding window tech, backtracking, kadane's algo(max subarray sum), spanning tree, longest incresing subsequence(LIS)
 
-**Hard :** DP, Bit manipulation techniques, string manipulation (logest common subsequence), 0/1 knapsack.
+**Hard :** DP, Bit manipulation techniques, string manipulation (longest common subsequence), 0/1 knapsack.
