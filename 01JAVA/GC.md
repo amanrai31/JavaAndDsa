@@ -29,17 +29,57 @@ str = null; // Eligible for GC
 }
 
 {
-//  Reassigning Reference
+//  2. Reassigning Reference
 String str1 = new String("Hello");
 String str2 = new String("World");
 str1 = str2;                         // "Hello" object eligible for GC
 }
 
 {
-// Object Going Out of Scope
+// 3. Object Going Out of Scope
 void method() {
     String localStr = new String("Hello");   // localStr eligible for GC when method ends
 }
 }
+
+```
+
+### Memory Management Best Practices
+
+```java
+{
+// 1. Avoid Memory Leaks
+// Bad - can cause memory leak
+static List<String> list = new ArrayList<>();
+
+// Good - clear when done
+list.clear();
+}
+
+{
+// 2. Use StringBuilder for String Concatenation(if string manipulation heavily involved)
+// Bad - creates multiple String objects
+String result = "";
+for (int i = 0; i < 1000; i++) {
+    result += "Hello";
+}
+
+// Good - efficient memory usage
+StringBuilder sb = new StringBuilder();
+for (int i = 0; i < 1000; i++) {
+    sb.append("Hello");
+}
+}
+
+{
+// 3. Close Resources
+// Using try-with-resources
+try (FileReader file = new FileReader("file.txt")) {
+    // File automatically closed
+} catch (IOException e) {
+    e.printStackTrace();
+}
+}
+
 
 ```
