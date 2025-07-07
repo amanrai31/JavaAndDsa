@@ -6,7 +6,7 @@ Automatically free up memory by removing unused objects.
 
 ### Memory Generations
 
-** 1. Young Generation**
+**1. Young Generation**
 
 - **Eden Space:** Where new objects are created
 - **Survivor Spaces (S0, S1):** Objects that survive first GC
