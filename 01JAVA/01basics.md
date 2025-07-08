@@ -55,7 +55,7 @@ Reference Variables => Object references (String, Arrays, Custom classes), Inter
 **NOTE :** Primitive & ref of non-primitive are stored in `stack memory` & actual data of non-primitive stored in `Heap memory`
 
 ```java
-com.company
+package com.company;
 public class Main{
   public static void main(String[] args){
     int kids = 2;
@@ -68,10 +68,11 @@ public class Main{
 ```
 
 - Wrapper class, BigDecimal class(for more accurate decimal calculation)
-- Package => Way to organism projects, consider as folder. Domain name reversed. (Learn a bit more about)
 - Range => `int a = Integer.MAX_VALUE`, `double b = Double.MIN_VALUE`
 - Size => `System.out.println(Long.BYTES)`, `System.out.println(Double.BYTES)`
 - Casting => `int n =20; byte b = (byte)(n/2);`
+
+- **Package** => Way to organizing projects(group related classes logically and physically ), consider as folder. While importing package => Domain name reversed. `Built-in packages => java.util, java.io, java.net, java.sql`.
 
 #### Character
 
