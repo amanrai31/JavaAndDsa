@@ -76,6 +76,35 @@ Collection of statements that does some specific task and `may` return result to
 
 ### Wrapper class
 
+It's object wrap primitive data types only.
+
+**Need**
+1. They convert primitive data type into Obj are needed to modify arguments passed into a method (Primitive data type passed by value).
+2. java.util package handle only obj
+3. Wrappers provide useful methods like `valurOf()`, `parseInt()`, `toString()` etc. that works for object only.
+4. Java’s collections like ArrayList, HashMap, etc., can only store objects, not primitives.
+
+**Primitive data type and their corresponding wrapper class** => `byte => Byte`, `int => Integer`, `double => Double`, `char => Character` & so on.
+
+**AutoBoxing & unboxing**
+
+```java
+int a = 10;
+Integer obj = a;                       // Autoboxing
+int b = obj;                           // unboxing
+```
+
+```java
+Double a = Double.valueOf(45.15);
+int b = a.intValue();                   // do not work if a was not an object
+
+Integer c = Interger.valueOf("101",2);   // Will treat this string as binary and convert to int value.
+Integer c = Interger.valueOf("101");     // string to int
+```
+
+-----
+
+## Constructor
 
 
 
