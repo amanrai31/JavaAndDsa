@@ -114,10 +114,50 @@ How it is diff from function => No return type(we can not write return inside co
 
 **Constructor overloading =>** Same as f/n overloading. Provides Flexibility that allows creating objects with different initialization options. We can use constructor chaining (constructor chaining is actually a technique used within constructor overloading).
 
+**Constructor chaining**
 
+```java
+// Constructor chaining
+public class Employee {
+    private String name;
+    private int id;
 
+    public Employee() {                                       // Default constructor
+        this("Unknown", 0);                                   // Calling main constructor which is accepting both parameters
+        System.out.println("Default constructor executed");
+    }
 
+    public Employee(String name) {                            // Constructor with name only
+        this(name, 0);
+        System.out.println("Constructor with name executed");
+    }
 
+    public Employee(String name, int id) {                      // Main Constructor with name and id (All parameters)
+        this.name = name;
+        this.id = id;
+        System.out.println("Main constructor with all parameters executed");
+    }
+
+    public void displayInfo() {
+        System.out.println("Employee: " + name + ", ID: " + id);
+    }
+
+    public static void main(String[] args) {
+        Employee e1 = new Employee();
+        e1.displayInfo();
+        System.out.println();
+
+        Employee e2 = new Employee("John");
+        e2.displayInfo();
+        System.out.println();
+
+        Employee e3 = new Employee("Sarah", 101);
+        e3.displayInfo();
+        System.out.println();
+
+    }
+}
+```
 
 
 
