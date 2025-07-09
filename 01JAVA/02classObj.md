@@ -1,4 +1,4 @@
-# CONTENT => OOPS => CLASS, OBJECT
+# CONTENT => OOPS => CLASS, OBJECT, FUNCTION, CONSTRUCTOR, WRAPPER CLASS
 
 ### OOP
 
@@ -44,6 +44,54 @@ Object is building block of OOPs. An object is made up of =>
 Declare => `Cars m5cs;` => Value will be null, declareing a reference variable does not create an object.
 
 Initalization => A `new` operator instantiate the class by allocating memory for new object & return ref to that memory, `new` operator also invokes the class constructor. `Cars m5cs = new Cars();` => There are 3 other way to create obj from a class
+
+**Anonymous object =>** Instantiate but are not stored in a reference vaiable. Used for immediate method call & destroyed after method call.
+
+
+### Methods/functions is JAVA
+
+Collection of statements that does some specific task and `may` return result to caller. Gets execute when called.
+
+**USE =>** Reuseability of code.
+
+**Method declaration =>**
+1. Access modifiers (All 4)
+2. Return type
+3. Method name
+4. Parameter list
+5. Execption list (Execption that you expect by f/n can throw)
+6. Body {}
+
+**Types of methods =>** 1. Bulit-in function  ||   2. user defined function
+
+**Method signature =>** `Name of method` & `parameters list` (no of para, order of para, type of para)
+
+**Method overloading =>** F/n name is same but overall signature is different. 
+
+**NOTE :** When a method is called it completes all statements, reaches return statement(may or may not return), throws an exception. 
+
+**Memory allocation for method call** When a method is called a stack frame (SF) is created within the stack area after that an argumant passed to a local variable & value returned by this method is stored in SF & after execution allocated SF would be deleted . There is stack pointer register which keep track of all SFs, this stack pointer register is managed by JVM.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
