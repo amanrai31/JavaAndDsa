@@ -114,10 +114,15 @@ How it is diff from function => No return type(we can not write return inside co
 
 **Constructor overloading =>** Same as f/n overloading. Provides Flexibility that allows creating objects with different initialization options. We can use constructor chaining (constructor chaining is actually a technique used within constructor overloading).
 
-**Constructor chaining**
+**Constructor chaining** => Two ways
+1. Same class (using this keyword)
+2. from child class (using super keyword)
+
+
+**NOTE :** this should be the 1st line of the constructor. There should be atleast one constructor without `this`.
 
 ```java
-// Constructor chaining
+// Constructor chaining in same class => using this 
 public class Employee {
     private String name;
     private int id;
@@ -159,11 +164,9 @@ public class Employee {
 }
 ```
 
+**Private constructor :** Where we use pvt constructor => 1. Internal constructor chaining. 2. Singleton class design patterns.
 
-
-
-
-
+Singleton class => We can not have more than one object. Applied for networking and DB connectivity etc. 
 
 
 
