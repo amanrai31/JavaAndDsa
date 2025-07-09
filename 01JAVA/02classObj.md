@@ -106,14 +106,13 @@ Integer c = Interger.valueOf("101");     // string to int
 
 ## Constructor
 
+It is a special method without any return type, used to set the fields of object and to initialize the object.
 
+How it is diff from function => No return type(we can not write return inside constructor) || must be same name as class || called only once at the time of obj creation || can not be overridden (will be treated as diff f/n altogether) || constructor can not be abstract, final, static or synchronized
 
+**Types =>** `Default (no parameters) constructor` || `Parameterized constructor`
 
-
-
-
-
-
+**Constructor overloading =>** Same as f/n overloading. Provides Flexibility that allows creating objects with different initialization options. We can use constructor chaining (constructor chaining is actually a technique used within constructor overloading).
 
 
 
