@@ -24,45 +24,45 @@ Class is a blueprint/prototype, from which objects are created. It is set of fie
 
 Class Declaration =>
 
-1. Modifiers => Class can have only `pulic` OR `default` access.
+1. Modifiers => Class can have only `public` OR `default` access.
 2. class name => First letter Capital(recommended)
 3. superclass (if any) => use keyword `extend`
-4. interface (if any) => A comma seperated list of interface(s) (if any), use keyword `implements`
+4. interface (if any) => A comma separated list of interface(s) (if any), use keyword `implements`
 5. Body => {}
 
-**Type of class used in real time application =>** `Nested class`, `annonymous class`, `lambda expression`
+**Type of class used in real time application =>** `Nested class`, `anonymous class`, `lambda expression`
 
 ### Object
 
 Object is building block of OOPs. An object is made up of => 
 1. field/props/instance variable => Reflect properties of an object
-2. methods/functions => Reflects behaviour of object
-3. Identity => Unique name to object, enalble one object to interact with other.
+2. methods/functions => Reflects behavior of object
+3. Identity => Unique name to object, enable one object to interact with other.
 
-#### Declare & initalization of object
+#### Declare & initialization of object
 
-Declare => `Cars m5cs;` => Value will be null, declareing a reference variable does not create an object.
+Declare => `Cars m5cs;` => Value will be null, declaring a reference variable does not create an object.
 
-Initalization => A `new` operator instantiate the class by allocating memory for new object & return ref to that memory, `new` operator also invokes the class constructor. `Cars m5cs = new Cars();` => There are 3 other way to create obj from a class
+Initialization => A `new` operator instantiate the class by allocating memory for new object & return ref to that memory, `new` operator also invokes the class constructor. `Cars m5cs = new Cars();` => There are 3 other way to create obj from a class
 
-**Anonymous object =>** Instantiate but are not stored in a reference vaiable. Used for immediate method call & destroyed after method call.
+**Anonymous object =>** Instantiate but are not stored in a reference variable. Used for immediate method call & destroyed after method call.
 
 
 ### Methods/functions is JAVA
 
 Collection of statements that does some specific task and `may` return result to caller. Gets execute when called.
 
-**USE =>** Reuseability of code.
+**USE =>** Reusability of code.
 
 **Method declaration =>**
 1. Access modifiers (All 4)
 2. Return type
 3. Method name
 4. Parameter list
-5. Execption list (Execption that you expect by f/n can throw)
+5. Exception list (Exception that you expect by f/n can throw)
 6. Body {}
 
-**Types of methods =>** 1. Bulit-in function  ||   2. user defined function
+**Types of methods =>** 1. Built-in function  ||   2. user defined function
 
 **Method signature =>** `Name of method` & `parameters list` (no of para, order of para, type of para)
 
@@ -70,7 +70,7 @@ Collection of statements that does some specific task and `may` return result to
 
 **NOTE :** When a method is called it completes all statements, reaches return statement(may or may not return), throws an exception. 
 
-**Memory allocation for method call =>** When a method is called a stack frame (SF) is created within the stack area after that an argumant passed to a local variable & value returned by this method is stored in SF & after execution allocated SF would be deleted . There is stack pointer register which keep track of all SFs, this stack pointer register is managed by JVM.  
+**Memory allocation for method call =>** When a method is called a stack frame (SF) is created within the stack area after that an argument passed to a local variable & value returned by this method is stored in SF & after execution allocated SF would be deleted . There is stack pointer register which keep track of all SFs, this stack pointer register is managed by JVM.  
 
 -----
 
@@ -81,7 +81,7 @@ It's object wrap primitive data types only.
 **Need**
 1. They convert primitive data type into Obj are needed to modify arguments passed into a method (Primitive data type passed by value).
 2. java.util package handle only obj
-3. Wrappers provide useful methods like `valurOf()`, `parseInt()`, `toString()` etc. that works for object only.
+3. Wrappers provide useful methods like `valueOf()`, `parseInt()`, `toString()` etc. that works for object only.
 4. Java’s collections like ArrayList, HashMap, etc., can only store objects, not primitives.
 
 **Primitive data type and their corresponding wrapper class** => `byte => Byte`, `int => Integer`, `double => Double`, `char => Character` & so on.
@@ -90,7 +90,7 @@ It's object wrap primitive data types only.
 
 ```java
 int a = 10;
-Integer obj = a;                       // Autoboxing
+Integer obj = a;                       // Auto-boxing
 int b = obj;                           // unboxing
 ```
 
@@ -119,7 +119,7 @@ How it is diff from function => No return type(we can not write return inside co
 2. from child class (using super keyword)
 
 
-**NOTE :** this should be the 1st line of the constructor. There should be atleast one constructor without `this`.
+**NOTE :** this should be the 1st line of the constructor. There should be at-least one constructor without `this`.
 
 ```java
 // Constructor chaining in same class => using this 
