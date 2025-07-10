@@ -163,6 +163,7 @@ public class Employee {
     }
 }
 ```
+**See copy constructor in => copyConstructor.java**
 
 **Private constructor :** Declared with private access modifier, where we use pvt constructor => 1. Internal constructor chaining. 2. Singleton class design patterns. 3. Utility/helper classes.
 
