@@ -1,4 +1,6 @@
 // Copy constructor
+// We must implement them manually in JAVA || Deep copy recommended: Especially for objects containing arrays or other objects || Null checking: Always check for null input
+// NEED => When you need to create independent copies of objects.
 
 public class Student {
     private String name;
