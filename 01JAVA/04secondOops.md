@@ -177,13 +177,17 @@ Process of hiding implementation details and showing only the essential features
 
 #### 1. Abstract class
 
-- Cannot be instantiated (new Animal() is not allowed), can not create object from Abstract class.
+- Cannot be instantiated (new Animal() is not allowed), can not create object from Abstract class. We can inherit them only.
 - Can have constructors, variables, and methods (can have both abstract and concrete methods => that's why it is partial abstraction)
 - Child class must implement all abstract methods
 
 **NOTE :** We Cannot instantiate abstract class but we can have ref. to abstract class type though. `Shape s1 = new Circle("red", 14); // Shape is abstract class here`
 
-**NOTE :** The constrctor of Abstract class is called when an instance of an inherited class is created.
+**NOTE :** Like interface we can have static method in AB class that can be called independently.
+
+**NOTE :** If child is not able to implement all the abstract methods of base AB class then we have to declare that child as Abstract class too so that next level child can implement remaining AB methods.
+
+**NOTE :** The constructor of Abstract class is called when an instance of an inherited class is created.
 
 ```
 abstract class Animal {
@@ -205,4 +209,6 @@ public class Test {
     }
 }
 ```
+
+
 
