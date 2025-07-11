@@ -167,18 +167,42 @@ public static void main(String args[]){
 
 ## Abstraction
 
+Process of hiding implementation details and showing only the essential features of an object. (Abstract methods declared without implementation & abstract method can not be declared as final)
 
+**NEED :** Hide complex internal logic. Expose only relevant functionalities, improve code maintainability, flexibility & security.
 
+### Abstraction is achived in 2 ways
+1. Abstract class 
+2. Interface      => Full abstraction (only method declarations in older versions; now can have default/static methods)
 
+#### 1. Abstract class
 
+- Cannot be instantiated (new Animal() is not allowed), can not create object from Abstract class.
+- Can have constructors, variables, and methods (can have both abstract and concrete methods => that's why it is partial abstraction)
+- Child class must implement all abstract methods
 
+**NOTE :** We Cannot instantiate abstract class but we can have ref. to abstract class type though. `Shape s1 = new Circle("red", 14); // Shape is abstract class here`
 
+**NOTE :** The constrctor of Abstract class is called when an instance of an inherited class is created.
 
-
-
-
-
-
-
-
+```
+abstract class Animal {
+    String name;
+    Animal(String name) {
+        this.name = name;
+        System.out.println("Animal constructor called");
+    }
+}
+class Dog extends Animal {
+    Dog(String name) {
+        super(name);               // Calls Animal constructor, or if we do not write than it can call automatically
+        System.out.println("Dog constructor called");
+    }
+}
+public class Test {
+    public static void main(String[] args) {
+        Dog d = new Dog("Buddy");             // Animal a = new Animal("Generic"); => This would cause error
+    }
+}
+```
 
