@@ -145,7 +145,8 @@ ref.print();                       // Child2
 }
 }
 
-=> A superclass reference varaible can refer to a subclass object. This is called `UUPERCASTING`. Resolved at runtime and depend on type of object being refered to (not on type of refered variable) that determines which version of overridden method will be executed.
+// A superclass reference varaible can refer to a subclass object. This is called `UUPERCASTING`.
+// Resolved at runtime and depend on type of object being refered to (not on type of refered variable) that determines which version of overridden method will be executed.
 
 `SuperclassA refV = new subclassB() => obj refered = subclassB || type of refV is superclassA`
 
