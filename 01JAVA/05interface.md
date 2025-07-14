@@ -113,7 +113,53 @@ As a final method we can not override but we have to override the abstract metho
 - static variable
 - static block
 - static method => No need of object, can only directly call other static method, they can only access static data, they cann't refer this or super in any way.
-- static class =? A class can be made static only if it is nested classSuch can does not need ref of outer class, in this case a static class can not access non-static members of outer class
+- static class => A class can be made static only if it is nested class. Such class does not need ref of outer class, in this case a static class can not access non-static members of outer class
+
+
+```java
+class Test {
+private static String s = "GFG";
+static class MyNestedClass{
+void display(){
+System.out.println("Show");}}
+public static void main(String args[]){
+Test.MyNestedClass t = new Test.MyNestedClass();
+a.display();
+}
+}
+```
+
+5. this => `this` refers current class instance variable. `this` invokes current class constructor. `this` invoke current class method. `this` is an argument in constructor call.
+
+6. Enum => user defined  data type, java enum is more powerfull as we can also add variables, method & constructor to it. The 1st line in enum should be a list of constants & then other things like method, variable& constructor. We can declare main method inside our enum.
+  
+**NOTE :** Enum can be declared inside or outside the class but not inside a method.
+```java
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
