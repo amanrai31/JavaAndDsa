@@ -1,5 +1,5 @@
 
-# CONTENT => INTERFACE,
+# CONTENT => INTERFACE, KEYWORDS
 
 Interface is an blueprint of class. Interface can have only abstract method(after java 8- we can have default, static & private methods too) and variables(public, static,final).
 
@@ -134,14 +134,20 @@ a.display();
 6. Enum => user defined  data type, java enum is more powerfull as we can also add variables, method & constructor to it. The 1st line in enum should be a list of constants & then other things like method, variable& constructor. We can declare main method inside our enum.
   
 **NOTE :** Enum can be declared inside or outside the class but not inside a method.
+
 ```java
+enum Color{RED,GREEN,BLUE};
+public class Test{
+  public static void main(String args[]){
+Color arr[] = color.values();
+for(int i=0; i<=arr.length();i++){
+System.out.println(arr[i] + "at index" + arr[i].ordinal());
+}
+System.out.println(color.valueOf("RED"););
+}
+}
 
-
-
-
-
-
-
+-----
 
 
 
