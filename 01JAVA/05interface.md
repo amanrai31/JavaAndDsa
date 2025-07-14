@@ -107,7 +107,9 @@ super, final, abstract, static, this, enum. **OTHER =>** assert, try, catch, thr
 
 As a final method we can not override but we have to override the abstract methods for its implementation.
 
-4. static => 
+4. static => non-access modifier, applied with variable, method, block & nested class. Used for memory managment.
+
+- 
 
 
 
