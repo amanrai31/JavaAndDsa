@@ -109,7 +109,21 @@ As a final method we can not override but we have to override the abstract metho
 
 4. static => non-access modifier, applied with variable, method, block & nested class. Used for memory managment.
 
-- 
+- static variable
+- static block
+- static method => No need of object, can only directly call other static method, they can only access static data, they cann't refer this or super in any way.
+- static class =? A class can be made static only if it is nested classSuch can does not need ref of outer class, in this case a static class can not access non-static members of outer class
+
+
+
+
+
+
+
+
+
+
+
 
 
 
