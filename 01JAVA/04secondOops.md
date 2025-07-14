@@ -211,5 +211,42 @@ public class Test {
 }
 ```
 
+**Encapsulation vs Abstraction**
+1. EC is data hiding(info hiding) while abstraction is details hiding(implementation hiding)
+2. Abstraction focuses on interface design, Encapsulation focuses on data security.
+
+-----
+
+## Encapsulation
+
+What: Binding data and methods together, controlling access
+Purpose: Data protection and security, we can make variable read only(flexibility)
+How: Private fields, getter/setter methods, access modifiers
+
+```java
+// Student is an encaulated class cuz variable are pvt & getter/setter are public
+
+class Student {
+   private int age;  // Private - hidden from outside
+   
+   public void setAge(int age) {  // Controlled access
+       if(age > 0) this.age = age;
+   }
+   
+   public int getAge() {
+       return age;
+   }
+}
+
+public class Test {
+   public static void main(String[] args) {
+       Student s = new Student();
+       // s.age = -5;  => ERROR - can't access directly
+       s.setAge(20);   // OK - controlled access
+       System.out.println(s.getAge());
+   }
+}
+```
+
 
 
