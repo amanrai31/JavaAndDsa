@@ -40,15 +40,18 @@ public class PaymentProcessor {
 }
 ```
 
+### Nested interface
 
+Interface inside class or another interface. Interface declared inside class either can be default, public,protected not private. We mention/implement interface as `className.interfaceName`.
 
+```java
+class Test {
+ interface Yes {void show();}
+}
 
-
-
-
-
-
-
+class Testing implements Test.Yes {
+public void show
+}
 
 
 
