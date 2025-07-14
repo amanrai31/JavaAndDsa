@@ -1,3 +1,4 @@
+
 # CONTENT => INTERFACE,
 
 Interface is an blueprint of class. Interface can have only abstract method(after java 8- we can have default, static & private methods too) and variables(public, static,final).
