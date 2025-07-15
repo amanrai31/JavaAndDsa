@@ -8,6 +8,8 @@
 
 **Grokking the System Design Interview**
 
+-----
+
 **Some common patterns**
 
 - If input array is sorted then => Binary search, 2-pointers.
