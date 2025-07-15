@@ -12,7 +12,7 @@ How the runtime of an algorithm grows as the input size (n) increases. OR the ra
 - O(2^n)	    => Exponential	   => Recursion like Fibonacci
 - O(n!)	     => Factorial	     => Brute-force permutations
 
-**NOTE :** Best case, average case, wrost case. We always measure TC in terms of worst case. Drop constants & lower terms/degree while calculating TC.
+**NOTE :** Best case(omega), average case(theta), wrost case(big-of). We always measure TC in terms of worst case. Drop constants & lower terms/degree while calculating TC.
 
 ```
 // Drop constants & lower terms/degree
