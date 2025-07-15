@@ -24,3 +24,8 @@ O(5) → O(1)
 ## Space Complexity
 
 Space Complexity = How much memory an algorithm uses as input size increases.
+
+Types of Space:
+1. Auxiliary Space - Extra memory used by algorithm
+2. Input Space - Memory for input data
+- Space Complexity = Auxiliary Space + Input Space
