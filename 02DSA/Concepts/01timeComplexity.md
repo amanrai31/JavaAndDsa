@@ -28,6 +28,9 @@ for(int i=0; i<n;i++){
     }
 }
 // Wht is TC of this code => {1+2+3+.....+n} = n*(n+1)/2 = (n^2)/2 + n/2 => So TC is n^2/2 i.e. near to n^2
+```
+
+**NOTE :** In coding round if it is mentioned to complete a problem in 1 sec that mean 10^8 operations. Typically servers do 10^8 operations in 1 sec.
 -----
 
 ## Space Complexity
@@ -35,6 +38,12 @@ for(int i=0; i<n;i++){
 Space Complexity = How much memory an algorithm uses as input size increases.
 
 Types of Space:
-1. Auxiliary Space - Extra memory used by algorithm
+1. Auxiliary Space - Extra memory used by algorithm (space you take to solve a problem)
 2. Input Space - Memory for input data
 - Space Complexity = Auxiliary Space + Input Space
+
+Suppose you have 2 variable a & b, these will be input space & you storing `c = a+b` for some reason then c will be Auxiliary space. 
+
+**NOTE :** Never manipulate the orignal input data to save space. Very bad pratice.
+
+
