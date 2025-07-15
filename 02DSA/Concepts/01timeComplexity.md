@@ -1,4 +1,6 @@
-# Time Complexity
+# CONTENT => Time Complexity, Space Complexity
+
+## Time Complexity
 
 How the runtime of an algorithm grows as the input size (n) increases. OR the rate at which time taken increases wrt the input size.
 
@@ -16,3 +18,9 @@ O(3n + 100) → O(n)
 O(n² + n + 1) → O(n²)
 O(5) → O(1)
 ```
+
+-----
+
+## Space Complexity
+
+Space Complexity = How much memory an algorithm uses as input size increases.
