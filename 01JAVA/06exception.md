@@ -94,11 +94,11 @@ When java program starts up, main thread starts running immediately. It is the t
 
 **NOTE :** Thread.currentThread().join() => will tell main thread to wait for this thread (i.e. wait for itself) to die. Thus main thread wait for itself to die called deadlock
 
-**Thread priority**
+**Thread priority =>** Thread scheduler assigns the processor to a thread based on the priority of thread Ranging from 1 to 10(Higher priority will be executed 1st). `public final int getPriority() => return priority of a given thread`, `public final void setPriority(newProirity) => change priority of a thread`
 
+**NOTE :** If 2 thread have same priority, thread schedular can make execute any 1st depends on thred schedular's algo. (Round robin, first come first serve etc.) 
 
-
-
+#### Learn => Thread pool, Thread synchronization, Thread safety etc.
 
 
 
