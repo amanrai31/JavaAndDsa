@@ -1,8 +1,10 @@
 # DSA
 
-1. Array & string, 2-Pointer & sliding window techniques, hashmap & hashset, linkedlist(basic,cucle detection), stack & queue (monotonic stack), binary search(on array, on answer), prefix sum & differnce array (range query)
-2. Binary tree & BST(DFS, BFS, recursion), Trie(prefix tree), heap/priority queue, Graph Traversal (BFS, DFS, Cycle detection), Topological Sort (Kahn’s + DFS), Union Find (Disjoint Set)
-3. 1D Dynamic Programming (Fibonacci, Climb Stairs), 2D DP (Grid problems, Subsequence based), Knapsack Pattern, System Design Basics(Load balancers, databases, caching, microservices)
+1. Array & string || 2-Pointer & sliding window techniques || hashmap & hashset || linkedlist(basic,cucle detection) || stack & queue (monotonic stack) || binary search(on array, on answer) || prefix sum & differnce array (range query)
+
+2. Binary tree & BST(DFS, BFS, recursion) || Trie(prefix tree) || heap/priority queue || Graph Traversal (BFS, DFS, Cycle detection) || Topological Sort (Kahn’s + DFS), Union Find (Disjoint Set)
+
+3. 1D Dynamic Programming (Fibonacci, Climb Stairs) || 2D DP (Grid problems, Subsequence based) || Knapsack Pattern || System Design Basics(Load balancers, databases, caching, microservices)
 **Grokking the System Design Interview**
 **Some common patterns**
 
