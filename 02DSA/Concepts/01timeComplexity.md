@@ -21,6 +21,13 @@ O(n² + n + 1) → O(n²)
 O(5) → O(1)
 ```
 
+```java
+for(int i=0; i<n;i++){
+  for(int j=0; j<=i; j++){
+     System.out.println("Hi");
+    }
+}
+// Wht is TC of this code => {1+2+3+.....+n} = n*(n+1)/2 = (n^2)/2 + n/2 => So TC is n^2/2 i.e. near to n^2
 -----
 
 ## Space Complexity
