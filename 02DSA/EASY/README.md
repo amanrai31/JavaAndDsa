@@ -1,3 +1,3 @@
 # EASY
 
-Question 7 => [https://leetcode.com/problems/reverse-integer/]
+Reverse interger => Q7 => [https://leetcode.com/problems/reverse-integer/]
