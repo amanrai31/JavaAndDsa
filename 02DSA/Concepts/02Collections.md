@@ -8,3 +8,46 @@ Collection framework made up of => 1. Collection interface, 2. Map interface, 3.
 
 Collection interface => List<E>, Set<E>, Queue<E>
 
+## Common collection framework & their most common classes (List, Set, Map)
+
+### 1. List interface
+
+- ArrayList class    => Resizable array that maintains order and allows duplicates
+- LinkedList class   => List with fast insert and remove operations
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----- 
+
+### 2. Set interface
+
+- HashSet class => Unordered collection of unique elements
+- TreeSet class => Sorted set of unique elements (natural order)
+- LinkedHashSet => Maintains the order in which elements were inserted
+
+### 3. Map interface
+
+- HashMap       => Stores key/value pairs with no specific order
+- TreeMap       => Sorted map based on the natural order of keys
+- LinkedHashMap => Maintains the order in which keys were inserted
