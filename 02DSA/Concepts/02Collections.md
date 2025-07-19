@@ -12,7 +12,12 @@ Collection interface => List<E>, Set<E>, Queue<E>
 
 ### 1. List interface
 
-- ArrayList class    => Resizable array that maintains order and allows duplicates
+List interface represents an ordered collection of elements. You can access elements by their index, add duplicates, and maintain the insertion order.
+
+**NOTE :** Use List when you care about order, you may have duplicates, and want to access elements by index.
+
+1. ArrayList class    => `Resizable array` that maintains order and allows duplicates
+
 - LinkedList class   => List with fast insert and remove operations
 
 
