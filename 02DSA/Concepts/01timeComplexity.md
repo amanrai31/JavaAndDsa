@@ -43,7 +43,7 @@ Types of Space:
 2. Input Space - Memory for input data
 - Space Complexity = Auxiliary Space + Input Space
 
-Suppose you have 2 variable a & b, these will be input space & you storing `c = a+b` for some reason then c will be Auxiliary space..
+Suppose you have 2 variable a & b, these will be input space & you storing `c = a+b` for some reason then c will be Auxiliary space.
 
 **NOTE :** Never manipulate the original input data to save space. Very bad practice.
 
