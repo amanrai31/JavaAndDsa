@@ -16,9 +16,34 @@ List interface represents an ordered collection of elements. You can access elem
 
 **NOTE :** Use List when you care about order, you may have duplicates, and want to access elements by index.
 
-1. ArrayList class    => `Resizable array` that maintains order and allows duplicates
+1. ArrayList class    => `Resizable array` that `maintains order` and `allows duplicate`
 
-- LinkedList class   => List with fast insert and remove operations
+**NOTE :** Elements of ArrayList are object, we can not use int, we have to use Integer instead.
+
+```java
+import java.util.ArrayList; 
+
+ArrayList<String> cars = new ArrayList<String>(); // Create an ArrayList object
+```
+
+#### ArrayList methods
+1. Add    => `list.add(item)`, `add(index,item)` || `addAll(Collection<T> items)`, `addAll(index, Collection<T> items)` 
+2. Access => `list.get(index)`
+3. Change => `list.set(index,item)`
+4. Remove => `list.remove(index)` || `list.clear()` => remove all elements of list
+5. Size   => `list.size()`
+6. Sort   => `Collections.sort()`
+
+```java
+// The List Interface => This means the cars is declared as a List (interface), but it stores an ArrayList object (the actual list).
+import java.util.List;
+import java.util.ArrayList;
+
+List<String> cars = new ArrayList<>();
+```
+
+
+2. LinkedList class   => List with fast insert and remove operations
 
 
 
