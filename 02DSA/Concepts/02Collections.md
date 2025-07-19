@@ -27,12 +27,15 @@ ArrayList<String> cars = new ArrayList<String>(); // Create an ArrayList object
 ```
 
 #### ArrayList methods
-1. Add    => `list.add(item)`, `add(index,item)` || `addAll(Collection<T> items)`, `addAll(index, Collection<T> items)` 
-2. Access => `list.get(index)`
-3. Change => `list.set(index,item)`
-4. Remove => `list.remove(index)` || `list.clear()` => remove all elements of list
-5. Size   => `list.size()`
-6. Sort   => `Collections.sort()`
+1. Add     => `list.add(item)`, `add(index,item)` || `addAll(Collection<T> items)`, `addAll(index, Collection<T> items)` 
+2. Access  => `list.get(index)`
+3. Change  => `list.set(index,item)`
+4. Remove  => `list.remove(index)` || `list.clear()` => remove all elements of list
+5. Size    => `list.size()`
+6. Sort    => `Collections.sort()` => Manipulates original list
+7. Reverse => `Collection.reverseOrder()`
+
+**NOTE :** sort & reverse comes under Collection class
 
 ```java
 // The List Interface => This means the cars is declared as a List (interface), but it stores an ArrayList object (the actual list).
@@ -42,25 +45,43 @@ import java.util.ArrayList;
 List<String> cars = new ArrayList<>();
 ```
 
-
 2. LinkedList class   => List with fast insert and remove operations
 
+The LinkedList class is a collection which can contain many objects of the same type (very similar to arrayList in many cases as both follow List interface).
 
+**Diff in ArrayList & LinkedList =>** The ArrayList class has a regular array inside it. When an element is added, it is placed into the array. If the array is not big enough, a new, larger array is created to replace the old one and the old one is removed. || The LinkedList stores its elements in "containers." The list has a link to the first container and each container has a link to the next container in the list. To add an element to the list, the element is placed into a new container and that container is linked to one of the other containers in the list.
 
+**LinkedList methods**
+1. addFirst()
+2. addLast()
+3. removeFirst()
+4. removeLast()
+5. getFirst()
+6. getLast()
+7. All other methods which are above for ArrayList
 
+```java
+// sort & reverse
 
+import java.util.ArrayList;
+import java.util.Collections;  // Import the Collections class
 
+public class Main {
+  public static void main(String[] args) {
+    ArrayList<String> cars = new ArrayList<String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mahindra");
 
+    Collections.sort(cars, Collections.reverseOrder()); // Sort cars
 
-
-
-
-
-
-
-
-
-
+    for (String i : cars) {
+      System.out.println(i);
+    }
+  }
+}
+```
 
 
 
