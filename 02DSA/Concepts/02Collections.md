@@ -82,20 +82,75 @@ public class Main {
   }
 }
 ```
-
-
-
-
-
-
-
 ----- 
 
 ### 2. Set interface
 
-- HashSet class => Unordered collection of unique elements
-- TreeSet class => Sorted set of unique elements (natural order)
-- LinkedHashSet => Maintains the order in which elements were inserted
+The Set interface is used to store a collection of unique elements. Unlike a List, a Set does not allow duplicates, and it does not preserve the order of elements (unless you're using TreeSet or LinkedHashSet) also unlike List it has `no index based access` as it does not guarantee order.
+
+1. HashSet class => Unordered collection of unique elements
+
+```java
+import java.util.HashSet; // Import the HashSet class
+
+HashSet<String> cars = new HashSet<String>();
+```
+**NOTE :** Elements of HashSet are object. i.e. Integer(not int), String, Float etc.
+
+#### HashSet methods
+1. add()
+2. contains()
+3. remove()
+4. clear()
+5. size()
+
+```java
+import hava.util.HashSet;
+
+HashSet<String> carsSet = new HashSet<>();
+carsSet.add("BMW");
+carsSet.add("Tata");
+carsSet.add("M&M");
+carsSet.add("BMW"); // Duplicate value
+
+System.out.println(carsSet);
+System.out.println(carsSet.size());
+for(String el : carsSet){
+System.out.println(el);
+}
+carsSet.remove("Tata");
+
+
+```
+
+
+- TreeSet class => `Sorted set` of unique elements (natural order)
+- LinkedHashSet => ordered by insertion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### 3. Map interface
 
