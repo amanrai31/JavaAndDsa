@@ -29,7 +29,7 @@ ArrayList<String> cars = new ArrayList<String>(); // Create an ArrayList object
 #### ArrayList methods
 1. Add             => `list.add(item)`, `add(index,item)` || `addAll(Collection<T> items)`, `addAll(index, Collection<T> items)` 
 2. Get             => `list.get(index)`
-3. Set/Change      => `list.set(index,item)`
+3. Set/update      => `list.set(index,item)`
 4. Remove          => `list.remove(index)` || `list.clear()` => remove all elements of list
 5. Size            => `list.size()`
 6. Sort            => `Collections.sort()` => Manipulates original list
