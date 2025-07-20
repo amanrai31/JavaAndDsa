@@ -16,7 +16,7 @@ List interface represents an ordered collection of elements. You can access elem
 
 **NOTE :** Use List when you care about order, you may have duplicates, and want to access elements by index.
 
-1. ArrayList class    => `Resizable array` that `maintains order` and `allows duplicate`
+#### 1. ArrayList class    => `Resizable array` that `maintains order` and `allows duplicate`
 
 **NOTE :** Elements of ArrayList are object, we can not use int, we have to use Integer instead.
 
@@ -27,13 +27,13 @@ ArrayList<String> cars = new ArrayList<String>(); // Create an ArrayList object
 ```
 
 #### ArrayList methods
-1. Add     => `list.add(item)`, `add(index,item)` || `addAll(Collection<T> items)`, `addAll(index, Collection<T> items)` 
-2. Access  => `list.get(index)`
-3. Change  => `list.set(index,item)`
-4. Remove  => `list.remove(index)` || `list.clear()` => remove all elements of list
-5. Size    => `list.size()`
-6. Sort    => `Collections.sort()` => Manipulates original list
-7. Reverse => `Collection.reverseOrder()`
+1. Add             => `list.add(item)`, `add(index,item)` || `addAll(Collection<T> items)`, `addAll(index, Collection<T> items)` 
+2. Get             => `list.get(index)`
+3. Set/Change      => `list.set(index,item)`
+4. Remove          => `list.remove(index)` || `list.clear()` => remove all elements of list
+5. Size            => `list.size()`
+6. Sort            => `Collections.sort()` => Manipulates original list
+7. Reverse         => `Collection.reverseOrder()`
 
 **NOTE :** sort & reverse comes under Collection class
 
@@ -45,7 +45,7 @@ import java.util.ArrayList;
 List<String> cars = new ArrayList<>();
 ```
 
-2. LinkedList class   => List with fast insert and remove operations
+#### 2. LinkedList class   => List with fast insert and remove operations
 
 The LinkedList class is a collection which can contain many objects of the same type (very similar to arrayList in many cases as both follow List interface).
 
@@ -74,7 +74,7 @@ public class Main {
     cars.add("Ford");
     cars.add("Mahindra");
 
-    Collections.sort(cars, Collections.reverseOrder()); // Sort cars
+    Collections.sort(cars, Collections.reverseOrder()); // Sort cars in reverse
 
     for (String i : cars) {
       System.out.println(i);
@@ -88,13 +88,8 @@ public class Main {
 
 The Set interface is used to store a collection of unique elements. Unlike a List, a Set does not allow duplicates, and it does not preserve the order of elements (unless you're using TreeSet or LinkedHashSet) also unlike List it has `no index based access` as it does not guarantee order.
 
-1. HashSet class => Unordered collection of unique elements (Faster as no sorting applied)
+#### 1. HashSet class => Unordered collection of unique elements (Faster as no sorting applied)
 
-```java
-import java.util.HashSet; // Import the HashSet class
-
-HashSet<String> cars = new HashSet<String>();
-```
 **NOTE :** Elements of HashSet are object. i.e. Integer(not int), String, Float etc.
 
 #### HashSet methods
@@ -124,7 +119,7 @@ carsSet.remove("Tata");
 ```
 
 
-2. TreeSet class => `Sorted set` of unique elements (bit slower as sorting applied)
+#### 2. TreeSet class => `Sorted set` of unique elements (bit slower as sorting applied)
 
 Same as HashSet, main diff is that TreeSet stores its elements sorted automatically.
 
@@ -135,7 +130,7 @@ TreeSet<String> cars = new TreeSet<>();
 // If you add something and print, the set will be in sorted order.
 ```
 
-3. LinkedHashSet => ordered by insertion
+#### 3. LinkedHashSet => ordered by insertion
 
 Main diff is that LinkedHashSet remembers the order of insertion
 
@@ -149,8 +144,68 @@ LinkedHashSet<String> cars = new LinkedHashSet<>();
 
 ### 3. Map interface
 
+The Map interface is a part of the Java Collections Framework and is used to store key-value pairs. Each key must be unique, but values can be duplicated.
+
+#### 1. HashMap       => Stores key/value pairs with `no specific order`, each key maps to a specific order
+
+=> Instead of accessing elements by an index (like with ArrayList), we use a key to retrieve its associated value.
+
+**NOTE :** Keys and values in a HashMap are actually objects. => A HashMap can store many different combinations: 1. String keys and Integer values 2.String keys and String values 3. Integer keys and String values
+
+```java
+import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+    HashMap<String, String> capitalCities = new HashMap<String, String>(); //HashMap object
+
+    // Add keys and values (Country, City)
+    capitalCities.put("England", "London");
+    capitalCities.put("India", "New Dehli");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("Norway", "Oslo"); // Duplicate
+    capitalCities.put("USA", "W DC");
+
+    System.out.println(capitalCities);
+    System.out.println(capitalCities.get("India"));
+    System.out.println(capitalCities.size());
+    System.out.println(capitalCities.remove("England"));
+    System.out.println(capitalCities.values() instanceof Collection);
+    for (String i : capitalCities.keySet()) {
+      System.out.println("key: " + i + " value: " + capitalCities.get(i));
+    }
+  }
+}
+```
+
+**Note :** Above, if the same key (like "Norway") is added more than once, the latest value will overwrite the previous one, because keys in a HashMap must be unique.
+
+#### HashMap methods
+1. put()
+2. get()
+3. remove()
+4. clear()
+5. size()
+6. keySet() => return Collection<String> of keys, returns keys
+7. values()  => return Collection<String> of values, return values
 
 
-- HashMap       => Stores key/value pairs with no specific order
-- TreeMap       => Sorted map based on the natural order of keys
+
+- TreeMap       => `Sorted map` based on keys
 - LinkedHashMap => Maintains the order in which keys were inserted
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
