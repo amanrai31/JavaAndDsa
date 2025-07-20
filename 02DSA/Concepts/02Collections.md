@@ -211,9 +211,9 @@ LinkedHashMap<String, String> capitalCities = new LinkedHashMap<>();
 
 -----
 
-## JAVA Iterator
+## JAVA Iterator => See 01DS.md
 
-An Iterator is an object that can be used to loop through collections, like ArrayList and HashSet.
+
 
 
 
