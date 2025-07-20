@@ -174,6 +174,7 @@ public class Main {
     for (String i : capitalCities.keySet()) {
       System.out.println("key: " + i + " value: " + capitalCities.get(i));
     }
+    System.out.println(capitalCities.conatains("India"));
   }
 }
 ```
@@ -188,6 +189,8 @@ public class Main {
 5. size()
 6. keySet() => return Collection<String> of keys, returns keys
 7. values()  => return Collection<String> of values, return values
+8. map.conatinsKey(), map.containsValue()
+9. map.isEmpty()
 
 ### 2. TreeMap       => `Sorted map` based on keys, does not allow null key
 
