@@ -154,6 +154,8 @@ StringBuilder stbl = new StringBuilder(str2);      // Same for StringBuffer
 - Interger.toString() || toLowerCase(), toUpperCase()
 - str1.compareTo(str2) => gives -1 if str1 comes before str2, opposite for +1 & 0 iff both equal
 
+**NOTE :** Never use == for string comparison in Java. Use .equals() instead because .equals() checks content only AND  `==` checks if both variables point to the same object in memory
+
 ### StringBuffer 
 
 `StringBuffer stbf = new StringBuffer("abc")` => reserves 16 more characters without reallocation
