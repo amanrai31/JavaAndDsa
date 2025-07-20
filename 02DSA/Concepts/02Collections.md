@@ -16,7 +16,7 @@ List interface represents an ordered collection of elements. You can access elem
 
 **NOTE :** Use List when you care about order, you may have duplicates, and want to access elements by index.
 
-#### 1. ArrayList class    => `Resizable array` that `maintains order` and `allows duplicate`
+### 1. ArrayList class    => `Resizable array` that `maintains order` and `allows duplicate`
 
 **NOTE :** Elements of ArrayList are object, we can not use int, we have to use Integer instead.
 
@@ -45,7 +45,7 @@ import java.util.ArrayList;
 List<String> cars = new ArrayList<>();
 ```
 
-#### 2. LinkedList class   => List with fast insert and remove operations
+### 2. LinkedList class   => List with fast insert and remove operations
 
 The LinkedList class is a collection which can contain many objects of the same type (very similar to arrayList in many cases as both follow List interface).
 
@@ -88,7 +88,7 @@ public class Main {
 
 The Set interface is used to store a collection of unique elements. Unlike a List, a Set does not allow duplicates, and it does not preserve the order of elements (unless you're using TreeSet or LinkedHashSet) also unlike List it has `no index based access` as it does not guarantee order.
 
-#### 1. HashSet class => Unordered collection of unique elements (Faster as no sorting applied)
+### 1. HashSet class => Unordered collection of unique elements (Faster as no sorting applied)
 
 **NOTE :** Elements of HashSet are object. i.e. Integer(not int), String, Float etc.
 
@@ -119,7 +119,7 @@ carsSet.remove("Tata");
 ```
 
 
-#### 2. TreeSet class => `Sorted set` of unique elements (bit slower as sorting applied)
+### 2. TreeSet class => `Sorted set` of unique elements (bit slower as sorting applied)
 
 Same as HashSet, main diff is that TreeSet stores its elements sorted automatically.
 
@@ -130,7 +130,7 @@ TreeSet<String> cars = new TreeSet<>();
 // If you add something and print, the set will be in sorted order.
 ```
 
-#### 3. LinkedHashSet => ordered by insertion
+### 3. LinkedHashSet => ordered by insertion
 
 Main diff is that LinkedHashSet remembers the order of insertion
 
@@ -146,7 +146,7 @@ LinkedHashSet<String> cars = new LinkedHashSet<>();
 
 The Map interface is a part of the Java Collections Framework and is used to store key-value pairs. Each key must be unique, but values can be duplicated.
 
-#### 1. HashMap       => Stores key/value pairs with `no specific order`, each key maps to a specific order
+### 1. HashMap       => Stores key/value pairs with `no specific order`, Allows one null key
 
 => Instead of accessing elements by an index (like with ArrayList), we use a key to retrieve its associated value.
 
@@ -189,15 +189,24 @@ public class Main {
 6. keySet() => return Collection<String> of keys, returns keys
 7. values()  => return Collection<String> of values, return values
 
+### 2. TreeMap       => `Sorted map` based on keys, does not allow null key
 
+```java
+import java.util.TreeMap; // Import the TreeMap class
 
-- TreeMap       => `Sorted map` based on keys
-- LinkedHashMap => Maintains the order in which keys were inserted
+TreeMap<String, String> capitalCities = new TreeMap<>();
+```
+Same method as HashMap
 
+### 3. LinkedHashMap => Maintains the order in which keys were inserted
 
+**NOTE :** Use LinkedHashMap when you want predictable iteration order (insertion order).
 
+```JAVA
+import java.util.LinkedHashMap; // Import the LinkedHashMap class
 
-
+LinkedHashMap<String, String> capitalCities = new LinkedHashMap<>();
+```
 
 
 
