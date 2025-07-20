@@ -88,7 +88,7 @@ public class Main {
 
 The Set interface is used to store a collection of unique elements. Unlike a List, a Set does not allow duplicates, and it does not preserve the order of elements (unless you're using TreeSet or LinkedHashSet) also unlike List it has `no index based access` as it does not guarantee order.
 
-### 1. HashSet class => Unordered collection of unique elements (Faster as no sorting applied)
+### 1. HashSet class => Unordered collection of unique elements (Faster as no sorting applied). TC => O(1)
 
 **NOTE :** Elements of HashSet are object. i.e. Integer(not int), String, Float etc.
 
@@ -130,7 +130,7 @@ TreeSet<String> cars = new TreeSet<>();
 // If you add something and print, the set will be in sorted order.
 ```
 
-### 3. LinkedHashSet => ordered by insertion
+### 3. LinkedHashSet => ordered by insertion => Implements Set & Binary search tree. TC => O(logn)
 
 Main diff is that LinkedHashSet remembers the order of insertion
 
