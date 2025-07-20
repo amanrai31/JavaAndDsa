@@ -10,7 +10,7 @@ Collection interface => List<E>, Set<E>, Queue<E>
 
 ## Common collection framework & their most common classes (List, Set, Map)
 
-### 1. List interface
+## List interface
 
 List interface represents an ordered collection of elements. You can access elements by their index, add duplicates, and maintain the insertion order.
 
@@ -84,7 +84,7 @@ public class Main {
 ```
 ----- 
 
-### 2. Set interface
+## Set interface
 
 The Set interface is used to store a collection of unique elements. Unlike a List, a Set does not allow duplicates, and it does not preserve the order of elements (unless you're using TreeSet or LinkedHashSet) also unlike List it has `no index based access` as it does not guarantee order.
 
@@ -142,7 +142,7 @@ LinkedHashSet<String> cars = new LinkedHashSet<>();
 ```
 -----
 
-### 3. Map interface
+## Map interface
 
 The Map interface is a part of the Java Collections Framework and is used to store key-value pairs. Each key must be unique, but values can be duplicated.
 
