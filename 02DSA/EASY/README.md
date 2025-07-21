@@ -6,3 +6,4 @@
 4. Contains Duplicate => Q217 => [https://leetcode.com/problems/contains-duplicate/description/]
 5. Sort colors => Q75 => [https://leetcode.com/problems/sort-colors/description/]
 6. Contains duplicate => Q217 => [https://leetcode.com/problems/contains-duplicate/description/]
+7. Longest Common prefix => Q14 => [https://leetcode.com/problems/longest-common-prefix/description/]
