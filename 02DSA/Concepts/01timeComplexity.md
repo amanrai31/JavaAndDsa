@@ -49,6 +49,17 @@ for(int i=0;i<100;i++){
 
 **IMPORTANT :** Suppose i have 3 subsequent/individual loops(not nested) in some code, then the TC of that code will be equal to that loop which is having the highest TC. 
 
+### T.C. w.r.t recursion
+
+```java
+int fun1(n){
+ if(n<0) return;
+ print("Hi");
+ fun1(n/2);
+ fun1(n/2);
+}
+```
+
 -----
 
 ## Space Complexity
