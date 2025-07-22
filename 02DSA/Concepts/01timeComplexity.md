@@ -52,12 +52,46 @@ for(int i=0;i<100;i++){
 ### T.C. w.r.t recursion
 
 ```java
+// T(n) = 2T(n/2) + c
 int fun1(n){
  if(n<0) return;
  print("Hi");
  fun1(n/2);
- fun1(n/2);
+ fun1(n/2);                   // Two time calling the fun1() that is why => 2T(n/2)
+// T.C. => 0(n), order of recurrence = (log n -> base 2) => c + 2c + 4c ... upto (log n) times
 }
+```
+```java
+// T(n) = 2T(n/2) + cn
+int fun1(n){
+ if(n<0) return;
+ print("Hi");
+ fun1(n/2);
+ fun1(n/2);                   // Two time calling the fun1() that is why => 2T(n/2)
+
+// T.C. => 0(n(log n)), order of recurrence = (log n -> base 2) => cn + (c*(n/2) + c*(n/2) = cn ) + (c*(n/4) + c*(n/4) + c*(n/4) + c*(n/4) = cn ) ... upto (log n) times
+}
+```
+
+```java
+// Tower of hanoi => T(n) = 2T(n-1) + c
+int fun(n){
+if(n<0)
+return;
+fun(n-1);
+fun(n-1);           
+}
+// T.C. => 0(2^n), order of recurrence = (n) => c + 2c + 4c ... upto n times
+```
+
+```java
+// Binary search => T(n) = T(n/2) + c
+int fun1(n){
+ if(n<0) return;
+ print("Hi");
+ fun1(n/2);                 // only one time calling the fun1() that is why => T(n/2) 
+}
+// T.C. => 0(log n), order of recurrence =  (log n -> base 2) => c + c + c ... upto (log n) times
 ```
 
 -----
