@@ -31,6 +31,12 @@ for(int i=0; i<n;i++){
 }
 // What is TC of this code => {1+2+3+.....+n} = n*(n+1)/2 = (n^2)/2 + n/2 => So TC is n^2/2 i.e. near to n^2
 ```
+```java
+for(int i=0;i<n;i*c){
+  // some constant work...
+}
+// TC for this is `log n` to base c => i.e. (log c^n)
+```
 
 **NOTE :** In coding round if it is mentioned to complete a problem in 1 sec that mean 10^8 operations. Typically servers do 10^8 operations in 1 sec.
 
