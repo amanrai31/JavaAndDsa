@@ -2,7 +2,7 @@
 
 ## Time Complexity
 
-How the runtime of an algorithm grows as the input size (n) increases. OR the rate at which time taken increases wrt the input size.
+How the runtime of an algorithm grows as the input size (n) increases. OR the rate at which time taken increases wrt the input size. (Asymptotic analaysis)
 
 - O(1)	      => Constant time	    =>  Accessing an array element: arr[0], Hastable lookup
 - O(log n)	  => Logarithmic        =>	Binary Search
@@ -13,6 +13,8 @@ How the runtime of an algorithm grows as the input size (n) increases. OR the ra
 - O(n!)	      => Factorial	        =>  Brute-force permutations
 
 **NOTE :** Best case(omega), average case(theta), worst case(big-of). We always measure TC in terms of worst case. Drop constants & lower terms/degree while calculating TC.
+
+**NOTE :** TC is not the time taken by a pgm, because it depends on machine, the programming language, system load etc.
 
 ```
 // Drop constants & lower terms/degree
