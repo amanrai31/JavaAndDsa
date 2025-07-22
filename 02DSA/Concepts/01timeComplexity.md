@@ -38,6 +38,13 @@ for(int i=0;i<n;i*c){
 // TC for this is `log n` to base c => i.e. (log c^n)
 ```
 
+```java
+for(int i=0;i<100;i++){
+  // some constant work...
+}
+// TC for this is O(1) because loop will run for constant value, if there will be n then TC would be O(n).
+```
+
 **NOTE :** In coding round if it is mentioned to complete a problem in 1 sec that mean 10^8 operations. Typically servers do 10^8 operations in 1 sec.
 
 -----
