@@ -47,6 +47,8 @@ for(int i=0;i<100;i++){
 
 **NOTE :** In coding round if it is mentioned to complete a problem in 1 sec that mean 10^8 operations. Typically servers do 10^8 operations in 1 sec.
 
+**IMPORTANT :** Suppose i have 3 subsequent/individual loops(not nested) in some code, then the TC of that code will be equal to that loop which is having the highest TC. 
+
 -----
 
 ## Space Complexity
