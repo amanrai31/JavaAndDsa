@@ -58,7 +58,7 @@ int fun1(n){
  print("Hi");
  fun1(n/2);
  fun1(n/2);                   // Two time calling the fun1() that is why => 2T(n/2)
-// T.C. => 0(n), order of recurrence = (log n -> base 2) => c + 2c + 4c ... upto (log n) times
+// T.C. => 0(n), order of recurrence = (log n -> base 2) => c + 2c + 4c ...i.e. 2 to the power upto (log n) times
 }
 ```
 ```java
@@ -92,6 +92,10 @@ int fun1(n){
  fun1(n/2);                 // only one time calling the fun1() that is why => T(n/2) 
 }
 // T.C. => 0(log n), order of recurrence =  (log n -> base 2) => c + c + c ... upto (log n) times
+```
+
+```java
+// 
 ```
 
 -----
