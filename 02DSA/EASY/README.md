@@ -8,3 +8,4 @@
 6. Contains duplicate => Q217 => [https://leetcode.com/problems/contains-duplicate/description/]
 7. Longest Common prefix => Q14 => [https://leetcode.com/problems/longest-common-prefix/description/]
 8. Valid anagram => Q242 => [https://leetcode.com/problems/valid-anagram/description/]
+9. Majority element => Q169 => [https://leetcode.com/problems/majority-element/description/]
