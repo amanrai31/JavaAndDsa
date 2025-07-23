@@ -1,59 +1,73 @@
 # CONTENT => MAP
 
-## Set interface
+## Map interface
 
-The Set interface is used to store a collection of unique elements. Unlike a List, a Set does not allow duplicates, and it does not preserve the order of elements (unless you're using TreeSet or LinkedHashSet) also unlike List it has `no index based access` as it does not guarantee order.
+The Map interface is a part of the Java Collections Framework and is used to store key-value pairs. Each key must be unique, but values can be duplicated.
 
-### 1. HashSet class => Unordered collection of unique elements (Faster as no sorting applied). TC => O(1)
+### 1. HashMap       => Stores key/value pairs with `no specific order`, Allows one null key
 
-**NOTE :** Elements of HashSet are object. i.e. Integer(not int), String, Float etc.
-**NOTE :** Backed by HashMap internally || Hash table implementation || O(1) average time for basic operations
+=> Instead of accessing elements by an index (like with ArrayList), we use a key to retrieve its associated value.
 
-#### HashSet methods
-1. add()
-2. contains()
+**NOTE :** Keys and values in a HashMap are actually objects. => A HashMap can store many different combinations: 1. String keys and Integer values 2.String keys and String values 3. Integer keys and String values
+
+```java
+import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+    HashMap<String, String> capitalCities = new HashMap<String, String>(); //HashMap object
+
+    // Add keys and values (Country, City)
+    capitalCities.put("England", "London");
+    capitalCities.put("India", "New Dehli");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("Norway", "Oslo"); // Duplicate
+    capitalCities.put("USA", "W DC");
+
+    System.out.println(capitalCities);
+    System.out.println(capitalCities.get("India"));
+    System.out.println(capitalCities.size());
+    System.out.println(capitalCities.remove("England"));
+    System.out.println(capitalCities.values() instanceof Collection);
+    for (String i : capitalCities.keySet()) {
+      System.out.println("key: " + i + " value: " + capitalCities.get(i));
+    }
+    System.out.println(capitalCities.conatains("India"));
+  }
+}
+```
+
+**Note :** Above, if the same key (like "Norway") is added more than once, the latest value will overwrite the previous one, because keys in a HashMap must be unique.
+
+#### HashMap methods
+1. put()
+2. get()
 3. remove()
 4. clear()
 5. size()
+6. keySet() => return Collection<String> of keys, returns keys
+7. values()  => return Collection<String> of values, return values
+8. map.conatinsKey(), map.containsValue()
+9. map.isEmpty()
+
+### 2. TreeMap       => `Sorted map` based on keys, does not allow null key
 
 ```java
-import hava.util.HashSet;
+import java.util.TreeMap; // Import the TreeMap class
 
-HashSet<String> carsSet = new HashSet<>();
-carsSet.add("BMW");
-carsSet.add("Tata");
-carsSet.add("M&M");
-carsSet.add("BMW"); // Duplicate value
+TreeMap<String, String> capitalCities = new TreeMap<>();
+```
+Same method as HashMap
 
-System.out.println(carsSet);
-System.out.println(carsSet.size());
-for(String el : carsSet){
-System.out.println(el);
-}
-carsSet.remove("Tata");
+### 3. LinkedHashMap => Maintains the order in which keys were inserted
 
+**NOTE :** Use LinkedHashMap when you want predictable iteration order (insertion order).
 
+```JAVA
+import java.util.LinkedHashMap; // Import the LinkedHashMap class
+
+LinkedHashMap<String, String> capitalCities = new LinkedHashMap<>();
 ```
 
 
-### 2. TreeSet class => `Sorted set` of unique elements (bit slower as sorting applied)
-
-Same as HashSet, main diff is that TreeSet stores its elements sorted automatically.
-
-```java
-import java.util.TreeSet; // Import the TreeSet class
-
-TreeSet<String> cars = new TreeSet<>();
-// If you add something and print, the set will be in sorted order.
-```
-
-### 3. LinkedHashSet => ordered by insertion => Implements Set & Binary search tree. TC => O(logn)
-
-Main diff is that LinkedHashSet remembers the order of insertion
-
-```java
-import java.util.LinkedHashSet; // Import the LinkedHashSet class
-
-LinkedHashSet<String> cars = new LinkedHashSet<>();
-// The elements will appear in the order they were added 
-```
+-----
