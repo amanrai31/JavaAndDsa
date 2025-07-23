@@ -20,6 +20,8 @@ List interface represents an ordered collection of elements. You can access elem
 
 **NOTE :** Elements of ArrayList are object, we can not use int, we have to use Integer instead.
 
+**NOTE :** Fast random access (O(1) for get/set). Slow insertion/deletion in middle (O(n)). Not thread safe. Default capacity: 10, grows by 50% when full
+
 ```java
 import java.util.ArrayList; 
 
@@ -50,6 +52,8 @@ List<String> cars = new ArrayList<>();
 The LinkedList class is a collection which can contain many objects of the same type (very similar to arrayList in many cases as both follow List interface).
 
 **Diff in ArrayList & LinkedList =>** The ArrayList class has a regular array inside it. When an element is added, it is placed into the array. If the array is not big enough, a new, larger array is created to replace the old one and the old one is removed. || The LinkedList stores its elements in "containers." The list has a link to the first container and each container has a link to the next container in the list. To add an element to the list, the element is placed into a new container and that container is linked to one of the other containers in the list.
+
+**NOTE :** Implements both List and Deque interfaces || Implements both List and Deque interfaces || Slow random access (O(n)) || Higher memory overhead due to node pointers.
 
 **LinkedList methods**
 1. addFirst()
@@ -91,6 +95,7 @@ The Set interface is used to store a collection of unique elements. Unlike a Lis
 ### 1. HashSet class => Unordered collection of unique elements (Faster as no sorting applied). TC => O(1)
 
 **NOTE :** Elements of HashSet are object. i.e. Integer(not int), String, Float etc.
+**NOTE :** Backed by HashMap internally || Hash table implementation || O(1) average time for basic operations
 
 #### HashSet methods
 1. add()
