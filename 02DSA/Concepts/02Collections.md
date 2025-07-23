@@ -86,6 +86,13 @@ public class Main {
   }
 }
 ```
+
+#### Vector
+
+Legacy synchronized version of ArrayList
+Thread-safe but with performance overhead
+Generally avoided in favor of ArrayList with explicit synchronization
+
 ----- 
 
 ## Set interface
