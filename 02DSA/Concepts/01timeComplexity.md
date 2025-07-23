@@ -95,7 +95,18 @@ int fun1(n){
 ```
 
 ```java
-// 
+// Upper bound using recurssion tree method => T(n) = T(n/4) + T(n/2) + cn
+
+// take the upper bound only i.e. (longest chain -> n/2) =>  means tree will go upto (log n) times & series(width) is going like => cn + 3cn/4 + 9cn/16 ... i.e. common ration (r) = 3/4
+
+// Sum of infinite series with common ration `r` (if r is less than 1) = a/(1-r) => i.e. [ cn/(1-3/4) ] means TC = O(n)
+```
+
+```
+// Upper bound using recurssion tree method => T(n) = T(n-1) + T(n-2) + c
+
+// take the upper bound only i.e. (longest chain -> n-2) => so c + 2c + 4c + 8c upto n times.  So, [TC = 2^n]
+
 ```
 
 -----
