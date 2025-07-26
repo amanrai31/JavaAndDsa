@@ -135,3 +135,16 @@ for(int i=0;i<n;i++){
 // space complexity = O(n), as array size is n but Auxiliary space complexity is O(1).
 ```
 
+**NOTE :** In case of recurssion we count extra function call (which takes space in stack). Height of recurssive tree = space complexity. 
+
+
+
+
+
+
+
+
+
+
+
+
