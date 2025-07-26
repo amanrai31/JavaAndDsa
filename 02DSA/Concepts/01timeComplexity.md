@@ -113,10 +113,10 @@ int fun1(n){
 
 ## Space Complexity
 
-Space Complexity = How much memory an algorithm uses as input size increases.
+Space Complexity = How much memory/RAM an algorithm uses as input size increases.
 
 Types of Space:
-1. Auxiliary Space - Extra memory used by algorithm (space you take to solve a problem)
+1. Auxiliary Space - Extra memory used by algorithm (space you take to solve a problem). Most of the time we talk about auxiliary space.
 2. Input Space - Memory for input data
 - Space Complexity = Auxiliary Space + Input Space
 
@@ -124,4 +124,14 @@ Suppose you have 2 variable a & b, these will be input space & you storing `c = 
 
 **NOTE :** Never manipulate the original input data to save space. Very bad practice.
 
+```java
+public int fun(int[] arr, int n){
+int sum = 0;
+for(int i=0;i<n;i++){
+ sum += arr[i];
+}
+}
+
+// space complexity = O(n), as array size is n but Auxiliary space complexity is O(1).
+```
 
