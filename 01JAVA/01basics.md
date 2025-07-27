@@ -28,11 +28,13 @@ public class Main {
 }
 ```
 
+**NOTE :** The JVM's `ClassLoader` subsystem locates the compiled `Main.class` file. It loads the bytecode into memory. The class is passed to the `Bytecode Verifier`, which checks for structural correctness and security (no invalid opcodes, etc). The main class's metadata (methods, fields, constant pool, etc.) is stored in the `method area`. Return error if main method is not there with exact signature. `Execution engine` begains the execution & finish. Garbage Collection may kick in to clean unused memory.
+
 ### Comments, keywords, expression, class body, method body, string literal, octal/hex representation
 
 **Access modifiers =>** public, default, protected, private
 
-**Non-Access modifiers** final, abstract, strictfp
+**Non-Access modifiers** final, static, abstract, strictfp, synchronised, volatile, transient, native
 
 -----
 
