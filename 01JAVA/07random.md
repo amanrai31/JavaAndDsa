@@ -27,3 +27,37 @@ class Another {
 java MyApp      # Main from MyApp
 java Another    # Main from Another
 ```
+
+-----
+
+```java
+// main method is static(not a part of instance - it belongs to class), it can call only static methods/fields, so either make run() static or follow the below approch
+public class Main {
+
+    public static void main(String[] args) {
+        Main mainApp = new Main();
+        mainApp.run();
+    }
+
+    public void run() {
+        String username = "player1";
+        String password = "password123";
+
+        if (login(username, password)) {
+            launchGame();
+        } else {
+            System.out.println("Login failed!");
+        }
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+
