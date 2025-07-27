@@ -8,11 +8,11 @@ Java is 3rd Gen, high level programming language, developed in 1991 in sunMicros
 
 - **JVM**(Java virtual machine => core execution engine) => Loads and executes Java bytecode (.class files), Memory management (Heap, Stack, Method Area), Garbage collection, Thread management, Security management. JAVA run on JVM not directly on machine that's why it is platform independent.
 
-JAVA uses Garbage collector, exception handling & auto memory allocation to make it reliable & minimize errors.
+JAVA uses Garbage collector, exception handling & automatic memory allocation to make it reliable & minimize errors.
 
 OOPS => Everything in java is represented in class as an object(main f/n too). Organizing a program in terms of collection of object is way of OOPs, each Obj represents the instance of a class. `Abstraction, Encapsulation, Inheritance, Polymorphism`.
 
-**NOTE :** Java doesn't use pointers, multi inheritance, operator overloading, explicit memory allocation.
+**NOTE :** Java doesn't use pointers, multiple inheritance, operator overloading, explicit memory allocation.
 
 => Source-file => `compiler` => ByteCode/.class => `JVM` => native code.
 
