@@ -34,7 +34,7 @@ public class Main {
 
 **Access modifiers =>** public, default, protected, private
 
-**Non-Access modifiers** final, static, abstract, strictfp, synchronised, volatile, transient, native
+**Non-Access modifiers =>** final, static, abstract, strictfp, synchronised, volatile, transient, native
 
 -----
 
