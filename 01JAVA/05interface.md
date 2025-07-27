@@ -96,9 +96,11 @@ Used to order the obj of user defined classes. A comparator obj. is capable of c
 
 super, final, abstract, static, this, enum. **OTHER =>** assert, try, catch, throw, finally, native, null, strintfp, synchronized, transient, volatile.
 
+**What are non-access modifiers =>** Non-access modifiers are keywords that modify the behavior of classes, methods, or variables without affecting their visibility
+
 1. super => use of super with variables, methods & constructor
 
-2. final => a non-access modifier, applicable only to a variable, method or class.
+2. final => a non-access modifier, applicable only to a variable, method or class. Can not be changed, overridden or extended.
 
 - final class => Prevent inheritance (e.g. string class wrapper)
 - final method => Prevent method overridding
