@@ -40,7 +40,7 @@ public class GenericClass<T>{
 ```
 
 ```java
-public class Dog<T, N>{
+public class Dog<T, N>{               // primitive data types not supported
 
 private T id;
 private N name;
