@@ -53,19 +53,62 @@ public Dog(T id, N name){
 }
 
 T getId(){
-return this.id;
+return this.id;         // OR => return id; Learn instance variable VS local variable
 }
 
 }
 
 public class Main{
-  public static void main(string[] args){
-    Dog<string,string> d1 = new Dog<>("dtf5567", "benchoo");
-    Dog<Integer, string> d2 = new Dog<>(4313, "rocky");
+  public static void main(String[] args){
+    Dog<String,String> d1 = new Dog<>("dtf5567", "benchoo");
+    Dog<Integer, String> d2 = new Dog<>(4313, "rocky");
   }
 }
 
 ```
+
+### Java generic method
+
+We can create a method that can be used with any type of data. `public <T> void genericMethod(T data){...}`. We can create genericMethod without generic class. 
+
+
+### Bounded generic type, Upper bound, Lower bound
+
+In general type parameter can accept any data type (except primitive). But if we want to use generic for some specific types only then we can use `bounded types`.
+
+```java
+// UPPER BOUND => USE extends keyword 
+class Box<T extends Number> {   // T must be Number or its subclass
+    private T value;
+
+    public void set(T value) {
+        this.value = value;
+    }
+}
+// Now only types like Integer, Double, Float, etc. are allowed
+```
+
+```java
+// LOWER BOUND => USE super keyword
+public void addNumbers(List<? super Integer> list) {
+    list.add(10);   // ✅ safe to add Integer
+    // list.add(3.14); ❌ not allowed
+}
+ // the list can accept Integer and its supertypes (Number, Object).
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
