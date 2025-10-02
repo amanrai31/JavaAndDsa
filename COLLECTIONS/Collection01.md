@@ -8,11 +8,24 @@ The Java Collections Framework provides a set of interfaces (like List, Set, and
 
 **Tip =>** Think of the Collections Framework as a toolbox. Interfaces like List define what tools can do, and classes like ArrayList are the actual tools that do the work.
 
-Collection framework made up of => 1. Collection interface, 2. Map interface, 3. Iterator interface
+Collection framework made up of => 1. `Collection interface`, 2. `Map interface`, 3. `Iterator interface`
 
-Collection interface => List<E>, Set<E>, Queue<E>
+1. Collection interface
+   
+- classes that implements `List<E> interface`  => ArrayList, LinkedList, Vector
+- classes that implements `Set<E> interface`   => HashSet, TreeSet
+- classes that implements `Queue<E> interface` => PriorityQueue, ArrayDeque
 
-## Common collection framework & their most common classes (List, Set, Map)
+2. Map Interface => classes that implements => HashMap, TreeMap, Hashtable, LinkedHashMap
+
+3. Iterator Interface => 
+
+------
+
+## Methods of collection interface
+
+- `int size()` | `boolean isEmpty()` | `boolean contains(Object O)` | `boolean add(E e)` | `boolean remove(Object O)` | `boolean containsAll(Collection<> c)`
+
 
 ## List interface
 
@@ -20,9 +33,9 @@ List interface represents an ordered collection of elements. You can access elem
 
 **NOTE :** Use List when you care about order, you may have duplicates, and want to access elements by index.
 
-### 1. ArrayList class    => `Resizable array` that `maintains order` and `allows duplicate`
+### 1. ArrayList class    => `Resizable array` that `maintains order` and `allows duplicates`
 
-**NOTE :** Elements of ArrayList are object, we can not use int, we have to use Integer instead.
+**NOTE :** Elements of ArrayList are object, we can not use primitives like int, we have to use Integer instead.
 
 **NOTE :** Fast random access (O(1) for get/set). Slow insertion/deletion in middle (O(n)). Not thread safe. Default capacity: 10, grows by 50% when full
 
@@ -36,7 +49,7 @@ ArrayList<String> cars = new ArrayList<String>(); // Create an ArrayList object
 1. Add             => `list.add(item)`, `add(index,item)` || `addAll(Collection<T> items)`, `addAll(index, Collection<T> items)` 
 2. Get             => `list.get(index)`
 3. Set/update      => `list.set(index,item)`
-4. Remove          => `list.remove(index)` || `list.clear()` => remove all elements of list
+4. Remove          => `list.remove(index)`, `list.remove(Object O)` || `list.clear()` => remove all elements of list
 5. Size            => `list.size()`
 6. Sort            => `Collections.sort()` => Manipulates original list
 7. Reverse         => `Collection.reverseOrder()`
