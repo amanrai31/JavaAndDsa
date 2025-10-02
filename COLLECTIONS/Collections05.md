@@ -19,6 +19,8 @@ Class in java whose object wraps or contains a primitive data type. `chat - Char
 2. UnBoxing - Auto conversion of object of wrapper class to it's corresponding primitive data type
 `int n = obj1`
 
+------
+
 ## Generic Class
 
 We can create classes that works with diff data types. An entity such as Class, Interface or method that operate on parameterized type is a Generic entity.
@@ -48,6 +50,10 @@ private N name;
 public Dog(T id, N name){
   this.id = id;
   this.name = name;
+}
+
+T getId(){
+return this.id;
 }
 
 }
