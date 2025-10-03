@@ -74,23 +74,6 @@ import java.util.ArrayList;
 List<String> cars = new ArrayList<>();
 ```
 
-### 2. LinkedList class   => List with fast insert and remove operations
-
-The LinkedList class is a collection which can contain many objects of the same type (very similar to arrayList in many cases as both follow List interface).
-
-**Diff in ArrayList & LinkedList =>** The ArrayList class has a regular array inside it. When an element is added, it is placed into the array. If the array is not big enough, a new, larger array is created to replace the old one and the old one is removed. || The LinkedList stores its elements in "containers." The list has a link to the first container and each container has a link to the next container in the list. To add an element to the list, the element is placed into a new container and that container is linked to one of the other containers in the list.
-
-**NOTE :** Implements both List and Deque interfaces || Implements both List and Deque interfaces || Slow random access (O(n)) || Higher memory overhead due to node pointers.
-
-**LinkedList methods**
-1. addFirst()
-2. addLast()
-3. removeFirst()
-4. removeLast()
-5. getFirst()
-6. getLast()
-7. All other methods which are above for ArrayList
-
 ```java
 // sort & reverse
 
@@ -105,7 +88,8 @@ public class Main {
     cars.add("Ford");
     cars.add("Mahindra");
 
-    Collections.sort(cars, Collections.reverseOrder()); // Sort cars in reverse
+    Collections.sort(cars, Collections.reverseOrder()); // Sort cars in reverse => Collections.sort(list, comparator)
+    // OR we can do => Collections.sort(cars); Collections.reverse(cars); 
 
     for (String i : cars) {
       System.out.println(i);
@@ -113,6 +97,23 @@ public class Main {
   }
 }
 ```
+
+### 2. LinkedList class   => Implements both List and Deque interfaces
+
+List with fast insert and remove operations. The LinkedList class is a collection which can contain many objects of the same type (very similar to arrayList in many cases as both follow List interface).
+
+**Diff in ArrayList & LinkedList =>** The ArrayList class has a regular array inside it. When an element is added, it is placed into the array. If the array is not big enough, a new, larger array is created to replace the old one and the old one is removed. || The LinkedList stores its elements in "containers." The list has a link to the first container and each container has a link to the next container in the list (prev & next pointers). To add an element to the list, the element is placed into a new container and that container is linked to one of the other containers in the list.
+
+**NOTE :** Implements both List and Deque interfaces || Slow random access (O(n)) || Higher memory overhead due to node pointers.
+
+**LinkedList methods**
+1. addFirst()
+2. addLast()
+3. removeFirst()
+4. removeLast()
+5. getFirst()
+6. getLast()
+7. All other methods which are above for ArrayList
 
 #### Vector
 
