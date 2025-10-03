@@ -66,8 +66,6 @@ cars.remove(Integer.valueOf(2));   // removes the value 2 (if we provide object 
 6. Sort            => `Collections.sort()` => Manipulates original list
 7. Reverse         => `Collection.reverseOrder()`
 
-**NOTE :** sort & reverse comes under Collection class
-
 ```java
 // The List Interface => This means the cars is declared as a List (interface), but it stores an ArrayList object (the actual list).
 import java.util.List;
