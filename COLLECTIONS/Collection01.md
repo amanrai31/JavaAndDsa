@@ -6,19 +6,20 @@ The Java Collections Framework provides a set of interfaces (like List, Set, and
 
 `WHY => Saves you from writing data structures from scratch (like arrays, linked lists, hash tables).`
 
-Collection framework made up of => 1. `Collection interface`, 2. `Map interface`, 3. `Iterator interface`
+Collection framework made up of => 
+1. `Collection interface` => Interface that implements Collection interface  => [`List`, `Set`, `Queue`]
+2. `Map interface`        => Classes that implement Collection interface    => [HashMap, TreeMap, Hashtable, LinkedHashMap]
+3. `Iterator interface`
 
-1. Collection interface
+------
+
+# 1. Collection Interface (List, Set, Queue)
+
+Collection interface => 3 interfaces that implement Collection interface => 1. `List`, 2. `Set`, 3. `Queue`
    
 - classes that implements `List<E> interface`  => ArrayList, LinkedList, stack, Vector
 - classes that implements `Set<E> interface`   => HashSet, TreeSet(sortedSet)
 - classes that implements `Queue<E> interface` => PriorityQueue, ArrayDeque
-
-2. Map Interface => classes that implement => HashMap, TreeMap, Hashtable, LinkedHashMap
-
-3. Iterator Interface => 
-
-------
 
 ## Methods of Collection interface
 
@@ -27,7 +28,9 @@ Collection framework made up of => 1. `Collection interface`, 2. `Map interface`
 - `boolean removeAll(Collection<> c)` => removes only common elements(intersection) | `boolean retainAll(Collection<> c)`
 - `Object[] toAray()` => returns array containing all elements in Collection
 
-## List interface
+-----
+
+## List interface (ArrayList, LinkedList, stack, Vector)
 
 List interface represents an ordered collection of elements. You can access elements by their index, add duplicates, and maintain the insertion order.
 
@@ -35,12 +38,12 @@ List interface represents an ordered collection of elements. You can access elem
 
 ### List interface methods
 
-- `get(int index)` | `set(int index, E element)` => Replace the element at specific index
+- `get(int index)` | `set(int index, E element)` => Replace the element at specific index(update method)
 - `add(int index, E element)` => add element at specific index and shift current elements to right
 - `indexOf(Object o)` => 1st occurence | `lastIndexOf(object 0)`
 - `subList(int from, int to)` =? to/last is exclusive
 
-### 1. ArrayList class    => `Resizable array` that `maintains order` and `allows duplicates`
+### 1. ArrayList class    => `Resizable array` that `maintains order` and `allows duplicates`. (Dynamic array)
 
 **NOTE :** Elements of ArrayList are object, we can not use primitives like int, we have to use Integer instead.
 
@@ -50,11 +53,11 @@ List interface represents an ordered collection of elements. You can access elem
 import java.util.ArrayList; 
 
 ArrayList<Integer> nums = new ArrayList<Integer>(); // Create an ArrayList object
-cars.remove(2);                    // Removes value at index 2;
-cars.remove(Integer.valueOf(2));   // removes the value 2
+cars.remove(2);                    // Removes value at index 2 (if we provide int value as a parameter)
+cars.remove(Integer.valueOf(2));   // removes the value 2 (if we provide object as a parameter)
 ```
 
-#### ArrayList methods
+#### ArrayList methods (All methods of Collection interface & List Interface)
 1. Add             => `list.add(item)`, `add(index,item)` || `addAll(Collection<T> items)`, `addAll(index, Collection<T> items)` 
 2. Get             => `list.get(index)`
 3. Set/update      => `list.set(index,item)`
