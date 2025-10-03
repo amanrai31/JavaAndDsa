@@ -12,26 +12,35 @@ Collection framework made up of => 1. `Collection interface`, 2. `Map interface`
 
 1. Collection interface
    
-- classes that implements `List<E> interface`  => ArrayList, LinkedList, Vector
-- classes that implements `Set<E> interface`   => HashSet, TreeSet
+- classes that implements `List<E> interface`  => ArrayList, LinkedList, stack, Vector
+- classes that implements `Set<E> interface`   => HashSet, TreeSet(sortedSet)
 - classes that implements `Queue<E> interface` => PriorityQueue, ArrayDeque
 
-2. Map Interface => classes that implements => HashMap, TreeMap, Hashtable, LinkedHashMap
+2. Map Interface => classes that implement => HashMap, TreeMap, Hashtable, LinkedHashMap
 
 3. Iterator Interface => 
 
 ------
 
-## Methods of collection interface
+## Methods of Collection interface
 
-- `int size()` | `boolean isEmpty()` | `boolean contains(Object O)` | `boolean add(E e)` | `boolean remove(Object O)` | `boolean containsAll(Collection<> c)`
-
+- `int size()` | `boolean isEmpty()` | `boolean contains(Object O)` | `boolean containsAll(Collection<> c)`  
+- `boolean add(E e)` | `boolean addAll(Collection<> c)` | `boolean remove(Object O)` | `void clear()`
+- `boolean removeAll(Collection<> c)` => removes only common elements(intersection) | `boolean retainAll(Collection<> c)`
+- `Object[] toAray()` => returns array containing all elements in Collection
 
 ## List interface
 
 List interface represents an ordered collection of elements. You can access elements by their index, add duplicates, and maintain the insertion order.
 
 **NOTE :** Use List when you care about order, you may have duplicates, and want to access elements by index.
+
+### List interface methods
+
+- `get(int index)` | `set(int index, E element)` => Replace the element at specific index
+- `add(int index, E element)` => add element at specific index and shift current elements to right
+- `indexOf(Object o)` => 1st occurence | `lastIndexOf(object 0)`
+- `subList(int from, int to)` =? to/last is exclusive
 
 ### 1. ArrayList class    => `Resizable array` that `maintains order` and `allows duplicates`
 
@@ -42,7 +51,9 @@ List interface represents an ordered collection of elements. You can access elem
 ```java
 import java.util.ArrayList; 
 
-ArrayList<String> cars = new ArrayList<String>(); // Create an ArrayList object
+ArrayList<Integer> nums = new ArrayList<Integer>(); // Create an ArrayList object
+cars.remove(2);                    // Removes value at index 2;
+cars.remove(Integer.valueOf(2));   // removes the value 2
 ```
 
 #### ArrayList methods
