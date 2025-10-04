@@ -16,7 +16,7 @@ The Set interface is used to store a collection of unique elements. Unlike a Lis
 4. clear()
 5. size()
 
-```java
+```java  
 import hava.util.HashSet;
 
 HashSet<String> carsSet = new HashSet<>();
