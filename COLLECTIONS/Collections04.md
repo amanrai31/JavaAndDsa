@@ -19,7 +19,7 @@ public class Main {
 
     // Add keys and values (Country, City)
     capitalCities.put("England", "London");
-    capitalCities.put("India", "New Dehli");
+    capitalCities.put("India", "New Dehli"); 
     capitalCities.put("Norway", "Oslo");
     capitalCities.put("Norway", "Oslo"); // Duplicate
     capitalCities.put("USA", "W DC");
