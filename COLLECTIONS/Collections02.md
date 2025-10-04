@@ -49,7 +49,7 @@ TreeSet<String> cars = new TreeSet<>();
 
 ### 3. LinkedHashSet => ordered by insertion => Implements Set & Binary search tree. TC => O(logn)
 
-Main diff is that LinkedHashSet remembers the order of insertion
+Main diff is that LinkedHashSet remembers the order of insertion.
 
 ```java
 import java.util.LinkedHashSet; // Import the LinkedHashSet class
