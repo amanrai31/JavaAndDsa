@@ -104,6 +104,8 @@ List with fast insert and remove operations. The LinkedList class is a collectio
 
 **Diff in ArrayList & LinkedList =>** The ArrayList class has a regular array inside it. When an element is added, it is placed into the array. If the array is not big enough, a new, larger array is created to replace the old one and the old one is removed. || The LinkedList stores its elements in "containers." The list has a link to the first container and each container has a link to the next container in the list (prev & next pointers). To add an element to the list, the element is placed into a new container and that container is linked to one of the other containers in the list.
 
+Elements in linkedList are NOT stored in sequence in memory. Instead they are scattered & connected through links(prev & next)
+
 **NOTE :** Implements both List and Deque interfaces || Slow random access (O(n)) || Higher memory overhead due to node pointers.
 
 **LinkedList methods**
@@ -117,7 +119,7 @@ List with fast insert and remove operations. The LinkedList class is a collectio
 
 #### Vector
 
-Legacy synchronized version of ArrayList
+Legacy synchronized version of ArrayList(We can say vector is a thread safe ArrayList)
 Thread-safe but with performance overhead
 Generally avoided in favor of ArrayList with explicit synchronization
 
