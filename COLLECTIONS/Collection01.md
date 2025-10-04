@@ -117,15 +117,45 @@ Elements in linkedList are NOT stored in sequence in memory. Instead they are sc
 6. getLast()
 7. All other methods which are above for ArrayList
 
-#### Vector
+```java
+import java.util.List;
+import java.util.LinkedList;
+
+List<String> cars = new LinkedList<>();
+```
+
+### 3. Vector
 
 Legacy synchronized version of ArrayList(We can say vector is a thread safe ArrayList)
 Thread-safe but with performance overhead
 Generally avoided in favor of ArrayList with explicit synchronization
 
+```java
+import java.util.List;
+import java.util.Vector;
+
+List<String> cars = new Vector<>();
+```
+
 ----- 
 
+### 4. Stack
 
+Elements are stored in `last in First out` (LIFO) manner. 
+
+```java
+import java.util.List;
+import java.util.Stack;
+
+Stack<String> cars = new Stack<>();
+```
+
+#### Stack methods
+
+- void push(E item) => push given element onto the top of the element.
+- E pop()           => removes & return the element at top (if stack is empty - emptyStackExecption)
+- E peek()          => returns the element at the top of the stack without removing it
+- boolean empty()   => returns true if stack is empty
 
 
 ## JAVA Iterator => See 01DS.md
