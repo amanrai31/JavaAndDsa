@@ -35,16 +35,24 @@ myQ.poll();
 - `addFirst(E e)` | `offerFirst(E e)` | `addLast(E e)` | `offerLast(E e)`
 - `removeFirst()` | `pollFirst()` | `removeLast()` | `pollLast()`  
 - `getFirst()` | `peekFirst()` | `getLast()` | `peekLast()`
+- `push(E e)` => adds from front | `pop()` => pops from front => stack implemented methods in arrayDeque
 
-**NOTE :** We can implement Stack using Deque
+**NOTE :** We can implement Stack using Deque. We can use `push()` & `pop()` methods. USE ARRAYDEQUE FOR STACK (Because stack implements vector, which is thread safe but slow)
 
 ```java
 ArrayDeque<Integer> dq = new ArrayDeque<>();
 ```
 
 
+-----
 
+## Priority Queue
 
+```java
+Queue<Integer> qe = new PriorityQueue<>();
+```
+
+**NOTE :** Priority queue implements minHeap that is why it inserts smallest Integer at front and also when we `poll/remove` from queue then the smallest Integer gets priority BY DEFAULT.
 
 
 
