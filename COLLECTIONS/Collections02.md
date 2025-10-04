@@ -4,8 +4,9 @@
 
 The queue interface provides functionality of a queue data structure. It extends the collection interface. The queue interface is implemented by =>
 
-1. `ArrayDeque`
-2. `LinkedList`
+
+1. `LinkedList`
+2. `ArrayDeque`
 3. `PriorityQueue`
 
 ### Queue interface
