@@ -124,6 +124,8 @@ import java.util.LinkedList;
 List<String> cars = new LinkedList<>();
 ```
 
+**IMP NOTE :** Main diff b/w array/arrayList & linkedList is that in array the elements are store in memory in continuous fasion in LinkedList is stored anywhere in memory (tracked by pointers). 
+
 ### 3. Vector
 
 Legacy synchronized version of ArrayList(We can say vector is a thread safe ArrayList)
