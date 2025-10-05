@@ -4,11 +4,18 @@
 
 The Map interface is a part of the Java Collections Framework and is used to store key-value pairs. Each key must be unique, but values can be duplicated.
 
-### 1. HashMap       => Stores key/value pairs with `no specific order`, Allows one null key
+**Classes that implement Map Interface =>** `HashMap, TreeMap, LinkedHashMap, EnumMap, WeakHashMap` 
+
+### Map interface Methods
+
+- `put(K,V)` | `putAll(Map<> m)` | `putIfAbsent(K,V)`
+- 
+
+### 1. HashMap       => Stores key/value pairs with `no specific order`, allows one null key
 
 => Instead of accessing elements by an index (like with ArrayList), we use a key to retrieve its associated value.
 
-**NOTE :** Keys and values in a HashMap are actually objects. => A HashMap can store many different combinations: 1. String keys and Integer values 2.String keys and String values 3. Integer keys and String values
+**NOTE :** Keys and values in a HashMap are actually objects. => A HashMap can store many different combinations like: 1. String keys and Integer values 2.String keys and String values 3. Integer keys and String values
 
 ```java
 import java.util.HashMap;
