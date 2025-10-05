@@ -35,7 +35,7 @@ System.out.println(el);
 carsSet.remove("Tata");
 ```
 
-**We can make a set of custom class**
+**We can make a set of custom classes**
 
 ```java
 class Student{
@@ -47,17 +47,37 @@ public Student(int n, String name){
   this.name = name;
 }
 
+@Override
 public string toString(){   //override toString method
   return "Studen{rollNo=" + rollNo + ", name" + name + "}";
 }
+
+@Override
+public boolean equals(Object o){                  
+  if(this == o) return true;
+  if(o==null || getClass() != o.getClass) return false;
+  Student student = (Student) o;
+  return rollNo == stuent.rollNo;
+}
+}
+
+@Override
+public int hashCode(){                  // generate diff hashcode on the basis of roll no
+  return Object.hash(rollNo);
 }
 
 public class Main{
   public static void main(String[] args){
    HashSet<Student> set = new HashSet<>();
-   set.add(new Student(1, aman));
-   set.add(new Student(1, aman));                 // Set will accept duplicates in this case as they are
+   Student s1 = new Student(1, "aman");
+   Student s2 = new Student(1, "appu")
+   System.out.println(s1.equals(s2));  // return true as both student has same rollNo
+   set.add(s1);                    // Set will accept duplicates in this case (if we did not create diff hashCode on the basis of rollNo)
+   set.add(s2);
 }
+
+// Remove the hashCode function from Student class. the try to add same student multiple time in a set. Set will accept all of them happily, as they 
+// all will have diff hashCodes even for the same Student. So, add a hashCode function that can differentiate based on rollNo.
 }
 ```
 
