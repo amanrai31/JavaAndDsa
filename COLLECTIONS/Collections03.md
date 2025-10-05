@@ -2,7 +2,7 @@
 
 ## Set interface
 
-Set interface is implemented by => `1. EnumSet, 2. HashSet, 3. LinkedHashSet 4. TreeSet`
+Set interface is implemented by => `1. HashSet, 2. LinkedHashSet, 3. TreeSet, 4. EnumSet`
 
 The Set interface is used to store a collection of unique elements. Unlike a List, a Set does not allow duplicates, and it does not preserve the order of elements (unless you're using TreeSet or LinkedHashSet) also unlike List it has `no index based access` as it does not guarantee order.
 
@@ -78,6 +78,7 @@ public class Main{
 
 // Remove the hashCode function from Student class. the try to add same student multiple time in a set. Set will accept all of them happily, as they 
 // all will have diff hashCodes even for the same Student. So, add a hashCode function that can differentiate based on rollNo.
+// We have to override the equals & hashCode methods to create set of custom class.
 }
 ```
 
