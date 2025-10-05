@@ -1,4 +1,4 @@
-# CONTENT => QUEUE, DEQUE, PRIORITYQUEUE
+# CONTENT => QUEUE
   
 ## Queue 
 
