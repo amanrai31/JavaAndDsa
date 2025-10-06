@@ -40,10 +40,17 @@ public class Main {
     System.out.println(capitalCities.size());
     System.out.println(capitalCities.remove("England"));
     System.out.println(capitalCities.values() instanceof Collection);
+    //capitalCities.keySet() will return a set(as keys are unique too) that we added to list. But map.values returns collection not SET
+    ArrayList<String> list = new ArrayList<>(capitalCities.keySet());
+    //We can also do => ArrayList list = (ArrayList<String>) capitalCities.keySet(); TYPE CASTING
     for (String i : capitalCities.keySet()) {
       System.out.println("key: " + i + " value: " + capitalCities.get(i));
     }
     System.out.println(capitalCities.conatains("India"));
+    Set(Map.Entry<String,String>) entries = capitalCities.entrySet();
+    for(Map.Entry<String, String> entry : entries){
+       System.out.println(entry.getKey() + ", " + entry.getValue());
+    }
   }
 }
 ```
