@@ -9,7 +9,11 @@ The Map interface is a part of the Java Collections Framework and is used to sto
 ### Map interface Methods
 
 - `put(K,V)` | `putAll(Map<> m)` | `putIfAbsent(K,V)`
-- 
+- `get(K)` | `getOrDefault(K, defaultValue)` | `remove(K)` | `clear()`
+- `containsKey(K)` | `containsValue(V)`
+- `replace(K,V)` | `replace(K, oldValue, newValue)`
+- `keySet()` | `values()` | `entrySet()`
+- `size()` | `isEmpty()`
 
 ### 1. HashMap       => Stores key/value pairs with `no specific order`, allows one null key
 
@@ -46,16 +50,6 @@ public class Main {
 
 **Note :** Above, if the same key (like "Norway") is added more than once, the latest value will overwrite the previous one, because keys in a HashMap must be unique.
 
-#### HashMap methods
-1. put()
-2. get()
-3. remove()
-4. clear()
-5. size()
-6. keySet() => return Collection<String> of keys, returns keys
-7. values()  => return Collection<String> of values, return values
-8. map.conatinsKey(), map.containsValue()
-9. map.isEmpty()
 
 ### 2. TreeMap       => `Sorted map` based on keys, does not allow null key
 
