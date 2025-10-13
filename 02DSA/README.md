@@ -22,6 +22,8 @@
 - If asked for top/least K items then => Heap, QuickSelect
 - If asked for common string => map, trie
 
+Resource => https://www.youtube.com/watch?v=DjYZk8nrXVY&t=223s
+
 ---
 
 ### Algorithm
