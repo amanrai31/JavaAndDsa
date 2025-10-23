@@ -6,6 +6,21 @@
 
 3. 1D Dynamic Programming (Fibonacci, Climb Stairs) || 2D DP (Grid problems, Subsequence based) || Knapsack Pattern || System Design Basics(Load balancers, databases, caching, microservices)
 
+---
+
+### Algorithm
+
+**Easy :** BFS, DFS, (linear search, binary search, jump search), bubble sort, insertion sort, redix sort, counting sort, bucket sort, traversal(preorder, inorder, postorder), 2-Pointer, slow-fast pointer, greedy algo, divide & conquer.
+
+**Intermediate :** Dijkstra's algo, Floyd-warshell algorithm, Bellmen-ford algo, Kruskal's algo, prim's algo, Hamming dist, suffix tree, Rabin-Karp algo, Floyd's cycle detection algo, Topological sorting, quick sort, merge sort, heap sort, sliding window tech, backtracking, kadane's algo(max subArray sum), spanning tree, longest increasing subsequence(LIS)
+
+**Hard :** DP, Bit manipulation techniques, string manipulation (longest common subsequence), 0/1 knapsack.
+
+
+-----
+
+**WHEN YOU ARE READY FOR FAANG INTERVIEW :** A good rule of thumb is if you can solve most medium problems that you haven't seen before, within 20 to 25 minutes, you can probably pass most interviews.
+
 -----
 
 **Some common patterns**
@@ -21,18 +36,3 @@
 - If asked for common string => map, trie
 
 Resource => https://www.youtube.com/watch?v=DjYZk8nrXVY&t=223s
-
----
-
-### Algorithm
-
-**Easy :** BFS, DFS, (linear search, binary search, jump search), bubble sort, insertion sort, redix sort, counting sort, bucket sort, traversal(preorder, inorder, postorder), 2-Pointer, slow-fast pointer, greedy algo, divide & conquer.
-
-**Intermediate :** Dijkstra's algo, Floyd-warshell algorithm, Bellmen-ford algo, Kruskal's algo, prim's algo, Hamming dist, suffix tree, Rabin-Karp algo, Floyd's cycle detection algo, Topological sorting, quick sort, merge sort, heap sort, sliding window tech, backtracking, kadane's algo(max subArray sum), spanning tree, longest increasing subsequence(LIS)
-
-**Hard :** DP, Bit manipulation techniques, string manipulation (longest common subsequence), 0/1 knapsack.
-
-
------
-
-**WHEN YOU ARE READY FOR FAANG INTERVIEW :** A good rule of thumb is if you can solve most medium problems that you haven't seen before, within 20 to 25 minutes, you can probably pass most interviews.
