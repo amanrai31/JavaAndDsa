@@ -6,14 +6,12 @@
 
 3. 1D Dynamic Programming (Fibonacci, Climb Stairs) || 2D DP (Grid problems, Subsequence based) || Knapsack Pattern || System Design Basics(Load balancers, databases, caching, microservices)
 
-**Grokking the System Design Interview**
-
 -----
 
 **Some common patterns**
 
 - If input array is sorted then => Binary search, 2-pointers.
-- If asked for all permutation/subset then => Backtracking
+- If asked for all permutations/subset then => Backtracking
 - If given a tree OR graph => BFS, DFS
 - If given a linked list => 2-pointers
 - If recursion is banned => Stack
