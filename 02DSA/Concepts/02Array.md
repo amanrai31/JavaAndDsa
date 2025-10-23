@@ -103,6 +103,13 @@ for(int i=0; i<arr[1].length;i++){
 ### Array methods
 
 - arr.length, arr.getClass(), arr.clone() || Array.copyOfRange(arr,2,6), Array.sort(arr) || `char arr[] = str.toCharArray();`
-- Array.equals(arr1,arr2) => matches content not ref, `arr1.equals(arr2)  same as arr1 == arr2` || `Array.deepEquals(arr1,arr2)`
-- `String str = arr.toString()`, `String s = new String(arr)` || use `str.append(arr) => in case of stringBuffer/Builder`
+- Array.equals(arr1,arr2) => matches content not ref || `arr1.equals(arr2)  same as arr1 == arr2` || `Array.deepEquals(arr1,arr2)`
+- `String str = arr.toString()` || `String s = new String(arr)` || use `str.append(arr) => in case of stringBuffer/Builder`
+
+
+
+---------
+
+# QESTIONS & PATTERNS
+
 
