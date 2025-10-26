@@ -118,4 +118,5 @@ for(int i=0; i<arr[1].length;i++){
 - [26] => https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 - Union/intersection of two sorted array => https://www.geeksforgeeks.org/problems/intersection-of-two-sorted-array-1587115620/1 (2Pointer)  {Good one}
 - [268] => https://leetcode.com/problems/missing-number/description/
+- [485] => https://leetcode.com/problems/max-consecutive-ones/description/
 - 
