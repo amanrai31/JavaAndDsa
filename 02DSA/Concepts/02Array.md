@@ -119,4 +119,20 @@ for(int i=0; i<arr[1].length;i++){
 - Union/intersection of two sorted array => https://www.geeksforgeeks.org/problems/intersection-of-two-sorted-array-1587115620/1 (2Pointer)  {Good one}
 - [268] => https://leetcode.com/problems/missing-number/description/
 - [485] => https://leetcode.com/problems/max-consecutive-ones/description/
-- 
+- [136] => https://leetcode.com/problems/single-number/                        (Bit) {Good}
+
+
+
+
+
+
+
+
+
+
+
+
+
+------
+
+1. Look if we can use `Math` or `Bit` concepts to solve? Many questions force you to use Math or Bit. || 2. Look if you can solve using `2Pointer` or `sliding window`. || 3. Look if can use `Hasing(Mao or Set)` 
