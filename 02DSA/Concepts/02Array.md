@@ -112,6 +112,8 @@ for(int i=0; i<arr[1].length;i++){
 
 # QESTIONS & PATTERNS
 
+## EASY
+
 - Largest element in array [3,2,1,7,5,2]
 - 2nd Largest element [1,2,4,7,7,5]
 - [1752] => https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/             {Good one}
@@ -121,7 +123,9 @@ for(int i=0; i<arr[1].length;i++){
 - [485] => https://leetcode.com/problems/max-consecutive-ones/description/
 - [136] => https://leetcode.com/problems/single-number/                        (Bit) {Good}
 
+## MEDIUM
 
+- [560] => https://leetcode.com/problems/subarray-sum-equals-k/description/
 
 
 
