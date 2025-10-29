@@ -128,7 +128,8 @@ for(int i=0; i<arr[1].length;i++){
 - [560] => https://leetcode.com/problems/subarray-sum-equals-k/description/  => https://www.youtube.com/watch?v=frf7qxiN2qU&list=PLgUwDviBIf0rENwdL0nEH0uGom9no0nyB&index=4                       {IMPORTANT}
 - Same as 560 ABOVE, return longest subarray-sum-equal-K(positive, negative),  return longest subarray-sum-equal-K(only positive) - prefixSum
 - [167] => https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
-- [75] => https://leetcode.com/problems/sort-colors/ {DUTCH-NATIONAL-FLAG}
+- [75] => https://leetcode.com/problems/sort-colors/ {DUTCH-NATIONAL-FLAG-3pointer} (If mid =0, exchange low & mid & increase low pointer || if mid=2, exchange high & mid & decrease high pointer || if mid=1, just increase mid pointer  )
+- 
 
 
 
