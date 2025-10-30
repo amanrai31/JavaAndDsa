@@ -130,7 +130,8 @@ for(int i=0; i<arr[1].length;i++){
 - [167] => https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
 - [75] => https://leetcode.com/problems/sort-colors/ {DUTCH-NATIONAL-FLAG ALGORITHUM- 3pointer} (If mid =0, exchange low & mid & increase both(low/high) pointers || if mid=2, exchange high & mid & decrease high pointer || if mid=1, just increase mid pointer  )
 - [169] => https://leetcode.com/problems/majority-element/description/ {MOORE'S VOTING ALGORITHUM}
-
+- [53] => https://leetcode.com/problems/maximum-subarray/submissions/1815681459/ {KANADNE ALGORITHUM}
+- 
 
 
 
