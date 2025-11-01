@@ -105,6 +105,7 @@ for(int i=0; i<arr[1].length;i++){
 - arr.length, arr.getClass(), arr.clone() || Arrays.copyOfRange(arr,2,6), Arrays.sort(arr) || `char arr[] = str.toCharArray();`
 - Arrays.equals(arr1,arr2) => matches content not ref || `arr1.equals(arr2)  same as arr1 == arr2` || `Arrays.deepEquals(arr1,arr2)`
 - `String str = arr.toString()` || `String s = new String(arr)` || use `str.append(arr) => in case of stringBuffer/Builder`
+- Math.max(x,y);
 
 
 
@@ -133,7 +134,7 @@ for(int i=0; i<arr[1].length;i++){
 - [53] => https://leetcode.com/problems/maximum-subarray/submissions/1815681459/ {KANADNE ALGORITHUM}
 - [121] => https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 - [2149] => https://leetcode.com/problems/rearrange-array-elements-by-sign/description/
-
+- [11] => https://leetcode.com/problems/container-with-most-water/description/
 
 
 
