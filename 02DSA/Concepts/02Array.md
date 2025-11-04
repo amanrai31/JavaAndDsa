@@ -136,7 +136,7 @@ for(int i=0; i<arr[1].length;i++){
 - [2149] => https://leetcode.com/problems/rearrange-array-elements-by-sign/description/
 - [11] => https://leetcode.com/problems/container-with-most-water/description/
 - [31] => https://leetcode.com/problems/next-permutation/   {MUST DO}
-- 
+- [128] => https://leetcode.com/problems/longest-consecutive-sequence/submissions/1820843427/ {Tricky - GOOD QUESTION}
 
 
 
