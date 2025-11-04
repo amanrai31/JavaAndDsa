@@ -105,7 +105,7 @@ for(int i=0; i<arr[1].length;i++){
 - arr.length, arr.getClass(), arr.clone() || Arrays.copyOfRange(arr,2,6), Arrays.sort(arr) || `char arr[] = str.toCharArray();`
 - Arrays.equals(arr1,arr2) => matches content not ref || `arr1.equals(arr2)  same as arr1 == arr2` || `Arrays.deepEquals(arr1,arr2)`
 - `String str = arr.toString()` || `String s = new String(arr)` || use `str.append(arr) => in case of stringBuffer/Builder`
-- Math.max(x,y); || swap(arr,i,j)
+- Math.max(x,y); || 
 
 
 
