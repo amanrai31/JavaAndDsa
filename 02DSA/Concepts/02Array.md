@@ -146,4 +146,4 @@ for(int i=0; i<arr[1].length;i++){
 
 ------
 
-1. Look if we can use `Math` or `Bit - Question with pair elements` concepts to solve? Many questions force you to use Math or Bit. || 2. Look if you can solve using `2Pointer` or `sliding window`, `Prefix sum`. || 3. Look if can use `Hasing(Mao or Set)` 
+1. Look if we can use `Math` or `Bit - Question with pair elements` concepts to solve? Many questions force you to use Math or Bit. || 2. Look if you can solve using `2Pointer` or `sliding window`, `Prefix sum`. || 3. Look if can use `Hasing(Mao or Set)` || 4. can i start from right side of array || 5. reverse of an sorted array(asc OR des) will take BigOf(n) we just need to swap using 2pointers
