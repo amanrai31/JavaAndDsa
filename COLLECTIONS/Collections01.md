@@ -1,7 +1,5 @@
 # COLLECTION FRAMEWORK
 
-# CONTENT => COLLECTIONS Interface: LIST
-
 The Java Collections Framework provides a set of interfaces (like List, Set, and Map) and a set of classes (ArrayList, HashSet, HashMap, etc.) that implement those interfaces. All of these are part of the java.util package.
 
 `WHY => Saves you from writing data structures from scratch (like arrays, linked lists, hash tables).`
