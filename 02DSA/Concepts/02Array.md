@@ -115,8 +115,8 @@ for(int i=0; i<arr[1].length;i++){
 
 ## EASY
 
-- Largest element in array [3,2,1,7,5,2]
-- 2nd Largest element [1,2,4,7,7,5]
+- Largest element in array 
+- 2nd Largest element 
 - [1752] => https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/             {Good one}
 - [26] => https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 - Union/intersection of two sorted array => https://www.geeksforgeeks.org/problems/intersection-of-two-sorted-array-1587115620/1 (2Pointer)  {Good one}
