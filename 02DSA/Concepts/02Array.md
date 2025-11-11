@@ -126,6 +126,7 @@ for(int i=0; i<arr[1].length;i++){
 
 ## MEDIUM
 
+- [1] => https://leetcode.com/problems/two-sum/description/
 - [560] => https://leetcode.com/problems/subarray-sum-equals-k/description/  => https://www.youtube.com/watch?v=frf7qxiN2qU&list=PLgUwDviBIf0rENwdL0nEH0uGom9no0nyB&index=4                       {IMPORTANT}
 - Same as 560 ABOVE, return longest subarray-sum-equal-K(positive, negative),  return longest subarray-sum-equal-K(only positive) - prefixSum
 - [167] => https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
