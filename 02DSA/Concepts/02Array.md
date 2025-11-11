@@ -138,6 +138,7 @@ for(int i=0; i<arr[1].length;i++){
 - [11] => https://leetcode.com/problems/container-with-most-water/description/    {MUST DO}
 - [31] => https://leetcode.com/problems/next-permutation/   {MUST DO}
 - [128] => https://leetcode.com/problems/longest-consecutive-sequence/ {Tricky - GOOD QUESTION}
+- [50] => https://leetcode.com/problems/subarray-sum-equals-k/description/ {MUST DO}
 
 
 
