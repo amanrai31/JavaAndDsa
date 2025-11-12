@@ -127,18 +127,23 @@ for(int i=0; i<arr[1].length;i++){
 ## MEDIUM
 
 - [1] => https://leetcode.com/problems/two-sum/description/
-- [560] => https://leetcode.com/problems/subarray-sum-equals-k/description/  => https://www.youtube.com/watch?v=frf7qxiN2qU&list=PLgUwDviBIf0rENwdL0nEH0uGom9no0nyB&index=4                       {IMPORTANT}
-- Same as 560 ABOVE, return longest subarray-sum-equal-K(positive, negative),  return longest subarray-sum-equal-K(only positive) - prefixSum
+
+ ### SubArray problems (VVI)
+ 
+ Resource - https://www.youtube.com/watch?v=frf7qxiN2qU&list=PLgUwDviBIf0rENwdL0nEH0uGom9no0nyB&index=4 
+- [53] => https://leetcode.com/problems/maximum-subarray/submissions/1815681459/ {KANADNE ALGORITHUM - find the subarray with the largest sum, and return its sum}
+- [560] => https://leetcode.com/problems/subarray-sum-equals-k/description/  {return the number of subarrays whose sum = k}
+- Same as 560 ABOVE, return longest subarray-sum-equal-K(positive, negative)
+- return longest subarray-sum-equal-K(only positive) - prefixSum
 - [167] => https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
 - [75] => https://leetcode.com/problems/sort-colors/ {DUTCH-NATIONAL-FLAG ALGORITHUM- 3pointer} (If mid =0, exchange low & mid & increase both(low/high) pointers || if mid=2, exchange high & mid & decrease high pointer || if mid=1, just increase mid pointer  )
 - [169] => https://leetcode.com/problems/majority-element/description/ {MOORE'S VOTING ALGORITHUM}
-- [53] => https://leetcode.com/problems/maximum-subarray/submissions/1815681459/ {KANADNE ALGORITHUM}
 - [121] => https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 - [2149] => https://leetcode.com/problems/rearrange-array-elements-by-sign/description/
 - [11] => https://leetcode.com/problems/container-with-most-water/description/    {MUST DO}
 - [31] => https://leetcode.com/problems/next-permutation/   {MUST DO}
 - [128] => https://leetcode.com/problems/longest-consecutive-sequence/ {Tricky - GOOD QUESTION}
-- [560] => https://leetcode.com/problems/subarray-sum-equals-k/description/ {MUST DO}
+
 
 
 
