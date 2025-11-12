@@ -130,7 +130,7 @@ for(int i=0; i<arr[1].length;i++){
 
  ### SubArray problems (VVI)
  
- Resource - https://www.youtube.com/watch?v=frf7qxiN2qU&list=PLgUwDviBIf0rENwdL0nEH0uGom9no0nyB&index=4 
+ [Resource](https://www.youtube.com/watch?v=frf7qxiN2qU&list=PLgUwDviBIf0rENwdL0nEH0uGom9no0nyB&index=4)
 - [53] => https://leetcode.com/problems/maximum-subarray/submissions/1815681459/ {KANADNE ALGORITHUM - find the subarray with the largest sum, and return its sum}
 - [560] => https://leetcode.com/problems/subarray-sum-equals-k/description/  {return the number of subarrays whose sum = k}
 - Same as 560 ABOVE, return longest subarray-sum-equal-K(positive, negative)
