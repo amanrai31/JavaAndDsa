@@ -14,5 +14,5 @@ Overflow case `mid = low+high/2 => maybe can cross the int limit so use long in 
 
 ### EASY
 
-- [704] => https://leetcode.com/problems/binary-search/description/  (Solve both way - Iterative, recurrsive)
-- 
+- [704] => https://leetcode.com/problems/binary-search/description/  (Solve both way - Iterative, recursive)
+- Lower bound `arr[index]>=target, return index` || Upper bound `arr[index]<=target, return index`
