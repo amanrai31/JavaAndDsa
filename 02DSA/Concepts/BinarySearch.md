@@ -1,11 +1,12 @@
 # Binary Search
 
-Binary search is only applicable on sorted data structures (Dictionary analogy)
+Binary search is only applicable on **sorted data structures** (Dictionary analogy)
 
 - Iterative way (Using loop)
 - Recurssive way 
 
 TimeComplexity - logn - base 2
+
 Overflow case `mid = low+high/2 => maybe can cross the int limit so use long in this case` OR do `mid = low + (high-low)/2` to overcome overflow condition
 
 
