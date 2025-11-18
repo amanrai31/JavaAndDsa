@@ -18,4 +18,4 @@ Overflow case `mid = low+high/2 => maybe can cross the int limit so use long in 
 - [704] => https://leetcode.com/problems/binary-search/description/  (Solve both way - Iterative, recursive)
 - Lower bound `arr[index]>=target, return index` || Upper bound `arr[index]>target, return index`
 - [35] => https://leetcode.com/problems/search-insert-position/submissions/1833462023/   => lower bound   {Must practice}
-- 
+- [34] => https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/  {IMPORTANT}
