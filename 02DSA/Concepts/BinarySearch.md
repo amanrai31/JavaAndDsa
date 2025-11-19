@@ -20,4 +20,6 @@ Overflow case `mid = low+high/2 => maybe can cross the int limit so use long in 
 - [35] => https://leetcode.com/problems/search-insert-position/  => lower bound  
 - [34] => https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/  {IMPORTANT}
 - [33] => https://leetcode.com/problems/search-in-rotated-sorted-array/description/ || [81] => https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/ {IMPORTANT}
+- [153] => https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/ || SIMILAR - How many times an array is rotated
+- [540] => https://leetcode.com/problems/single-element-in-a-sorted-array/ {IMPORTANT}
 - 
