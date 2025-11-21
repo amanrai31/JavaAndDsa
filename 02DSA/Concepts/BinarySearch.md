@@ -1,7 +1,8 @@
 # Binary Search
 
 Binary search is only applicable on **sorted data structures** (Dictionary analogy).
-**Think of BS if array is sorted or we asked to solve a problem in TC in logN**
+
+**When to use BS** =>  **Think of BS if array is sorted or we asked to solve a problem in TC in logN**
 
 - Iterative way (Using loop)
 - Recurssive way 
