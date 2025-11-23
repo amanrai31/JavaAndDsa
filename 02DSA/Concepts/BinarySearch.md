@@ -28,3 +28,4 @@ Overflow case `mid = low+high/2 => maybe can cross the int limit so use long in 
 - [69] => https://leetcode.com/problems/sqrtx/description/  || https://www.geeksforgeeks.org/problems/find-nth-root-of-m5843/1
 - [875] => https://leetcode.com/problems/koko-eating-bananas/description/ || https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/  => Math.ceil => (element + divisor - 1) / divisor;{IMPORTANT}
 - [1482] => https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/description/ {IMPORTANT}
+- [1011] => https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/description/
