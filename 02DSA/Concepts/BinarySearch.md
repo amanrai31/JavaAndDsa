@@ -26,6 +26,6 @@ Overflow case `mid = low+high/2 => maybe can cross the int limit so use long in 
 - [540] => https://leetcode.com/problems/single-element-in-a-sorted-array/ {if i'm standing on even index & if it's next element is same MEANS all previous elements are in pair, so no need to look behind}{IMPORTANT} 
 - [162] => https://leetcode.com/problems/find-peak-element/  {IMPORTANT} 
 - [69] => https://leetcode.com/problems/sqrtx/description/  || https://www.geeksforgeeks.org/problems/find-nth-root-of-m5843/1
-- [875] => https://leetcode.com/problems/koko-eating-bananas/description/ || https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/  => Math.ceil => (element + divisor - 1) / divisor;{IMPORTANT}
+- [875] => https://leetcode.com/problems/koko-eating-bananas/description/ || [1283] => https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/  => Math.ceil => (element + divisor - 1) / divisor;{IMPORTANT}
 - [1482] => https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/description/ {IMPORTANT}
 - [1011] => https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/description/
