@@ -27,10 +27,14 @@ Overflow case `mid = low+high/2 => maybe can cross the int limit so use long in 
 - [162] => https://leetcode.com/problems/find-peak-element/  {IMPORTANT} 
 - [69] => https://leetcode.com/problems/sqrtx/description/  || https://www.geeksforgeeks.org/problems/find-nth-root-of-m5843/1
 
-### MEDIUM - BS on answer (max or min)
+### MEDIUM - 
+
+#### BS on answer (max or min)
 
 - [875] => https://leetcode.com/problems/koko-eating-bananas/description/ || [1283] => https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/  => Math.ceil => (element + divisor - 1) / divisor;{IMPORTANT}
 - [1482] => https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/description/ {IMPORTANT}
 - [1011] => https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/description/
 - [1539] => https://leetcode.com/problems/kth-missing-positive-number/ {TRY} - [arr[e] + ( k - (arr[e] - (e + 1)))] = (k + e + 1) = `k + s`
-- 
+
+#### BS on answer (maxOfmin OR minOfmax)
+- []
