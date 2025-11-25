@@ -37,4 +37,4 @@ Overflow case `mid = low+high/2 => maybe can cross the int limit so use long in 
 - [1539] => https://leetcode.com/problems/kth-missing-positive-number/ {TRY} - [arr[e] + ( k - (arr[e] - (e + 1)))] = (k + e + 1) = `k + s`
 
 #### BS on answer (maxOfmin OR minOfmax)
-- []
+- [Agressive cows] => https://www.geeksforgeeks.org/problems/aggressive-cows/1
