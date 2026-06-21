@@ -6,6 +6,7 @@
 
 A Search(A* algorithum) used by MAPs =>  https://www.youtube.com/watch?v=88I6IidylGc
 
+-----
 
 **Recurssion =>** When a f/n keeps calling itself until a specified condition is met.
 
