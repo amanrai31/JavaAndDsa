@@ -10,4 +10,10 @@ A Search(A* algorithum) used by MAPs =>  https://www.youtube.com/watch?v=88I6Iid
 
 **Recurssion =>** When a f/n keeps calling itself until a specified condition is met.
 
-- Base case, StackOverflow, Recursion tree.
+- Base case - function return some value when base case meet.
+- StackOverflow - function call stack has limited space, when it goes beuond that space then stackpverfloww happens
+- Stack space - space to accumulate function calls.
+- Recursion tree - represeational diagram of function calls
+
+
+
