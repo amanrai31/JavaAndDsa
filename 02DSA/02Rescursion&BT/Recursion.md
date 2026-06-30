@@ -16,4 +16,8 @@ A Search(A* algorithum) used by MAPs =>  https://www.youtube.com/watch?v=88I6Iid
 - Recursion tree - represeational diagram of function calls
 
 
+=> Print your name N times using Recursion - Time complexcity - 0(n) || space complexcity - o(n) - in stack it made n function calls.
+
+
+
 
