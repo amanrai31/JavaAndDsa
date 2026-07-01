@@ -18,6 +18,31 @@ A Search(A* algorithum) used by MAPs =>  https://www.youtube.com/watch?v=88I6Iid
 
 => Print your name N times using Recursion - Time complexcity - 0(n) || space complexcity - o(n) - in stack it made n function calls.
 
+## BackTracking
 
+The statements executes after the function call(Not before function call).
+
+```
+// General recurssion => i = 1, n = 10;
+public static void fun(int i, int n) {
+        if( i > n) return;
+        System.out.println(i);
+        fun(i+1, n);
+}
+// Will print 1,2,3 ...
+```
+```
+// Backtrack => i = 1, n = 10;
+
+public static void fun(int i, int n) {
+        if( i > n) return;
+        fun(i+1, n);
+        System.out.println(i);
+}
+// Will print 10, 9, 8 ...
+```
+
+
+## Questions
 
 
